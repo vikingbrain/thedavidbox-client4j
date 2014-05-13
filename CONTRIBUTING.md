@@ -1,6 +1,6 @@
 # Contributing to TheDavidBox client for Java
 
-Looking to contribute something to the hbc? Here's how you can help.
+Looking to contribute something to the thedavidbox-client4j? Here's how you can help.
 
 ## Bugs reports
 
