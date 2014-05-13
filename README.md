@@ -42,73 +42,76 @@ ClientOptions clientOptions = new ClientOptions.Builder()
 	...
 	.build();
 
-TheDavidBoxClient theDavidBoxClient = new TheDavidBoxClientImpl("IPorHostName", clientOptions);
+TheDavidBoxClient theDavidBoxClient = new TheDavidBoxClientImpl("IPorHostName",
+      clientOptions);
 ```
 
 The thedavidbox-client4j operations are divided in ten modules: ModuleDownloadManager, ModuleDeployment, ModuleFile, ModuleNetworkBrowse, ModulePlayback, ModuleSetting, ModuleSystem, ModuleMetadata, ModuleMetadataDatabase, ModuleUpnp.
 
-Create and execute an operation:
+Create and execute an operation from a module:
 ```java
-		//Get the module for the operation
-		ModulePlayback modulePlayback = theDavidBoxClient.getModulePlayback();
+//Get the module for the operation
+ModulePlayback modulePlayback = theDavidBoxClient.getModulePlayback();
 
-		String audioPath = "file:///opt/sybhttpd/localhost.drives/SATA_DISK/music/mock.mp3";
+String audioPath = "file:///opt/sybhttpd/localhost.drives/SATA_DISK/music/mock.mp3";
 
-		/** Operation start audio on NMT. It is built using the DisplayMode specified in your default client options
-		 * so you don't need to specify it every time. */
-		modulePlayback.buildStartAodOperation(audioPath).execute();
+/** Operation start audio on NMT. It is built using the DisplayMode specified in your
+default client options so you don't need to specify it every time. */
+modulePlayback.buildStartAodOperation(audioPath).execute();
 
-		/** Or redefine the attributes for the operation at any time */
-		StartAodOperation startAodOperation = modulePlayback.buildStartAodOperation(audioPath);
-		startAodOperation.setDisplayMode(DisplayMode.HIDE); //background mode
-		startAodOperation.execute();
+/** Or redefine the attributes for the operation at any time */
+StartAodOperation startAodOperation = modulePlayback.buildStartAodOperation(audioPath);
+startAodOperation.setDisplayMode(DisplayMode.HIDE); //background mode
+startAodOperation.execute();
 
 
-		//Other operation examples
-		CreateDownloadTaskOperation operation = theDavidBoxClient.getModuleDownloadManager().
-				buildCreateDownloadTaskOperation("http://movie.torrent", "MovieName");
+//Other operation examples
+CreateDownloadTaskOperation operation = theDavidBoxClient.getModuleDownloadManager().
+    buildCreateDownloadTaskOperation("http://movie.torrent", "MovieName");
 
-		ListNetworkResourceOperation operation = theDavidBoxClient.getModuleNetworkBrowse().
-				buildListNetworkResourceOperation();
+ListNetworkResourceOperation operation = theDavidBoxClient.getModuleNetworkBrowse().
+		buildListNetworkResourceOperation();
 ```
 
 Using an operation listener will provide information about requests and responses from the NMT device:
 ```java
-	public class OperationListener implements TheDavidboxOperationListener{
+public class OperationListener implements TheDavidboxOperationListener{
 
-		@Override
-		public void onSendHttpRequest(String request) {
-			logger.debug(request);
-		}
-
-		@Override
-		public void onReceiveXmlResponse(String xmlResponse) {
-			logger.debug(xmlResponse);
-		}
-
+	@Override
+	public void onSendHttpRequest(String request) {
+		logger.debug(request);
 	}
 
-	//Use the constructor providing the listener
-	TheDavidBoxClient client = new TheDavidBoxClientImpl("IPorHostName", clientOptions, new OperationListener());
+	@Override
+	public void onReceiveXmlResponse(String xmlResponse) {
+		logger.debug(xmlResponse);
+	}
+
+}
+
+//Use the constructor providing the listener
+TheDavidBoxClient client = new TheDavidBoxClientImpl("IPorHostName",
+      clientOptions, new OperationListener());
 ```
 
 About the responses:
 ```java
-		try {
-			ResponseGetPlaybackSpeedVod response = theDavidBoxClient.getModulePlayback().
-					buildGetPlaybackSpeedVodOperation().execute();
+try {
+	ResponseGetPlaybackSpeedVod response = theDavidBoxClient.getModulePlayback().
+			buildGetPlaybackSpeedVodOperation().execute();
 
-			//Check first that response is valid
-			if (response.isValid()){
-				logger.info("Speed: " + response.getSpeed());
-			} else {
-				//if it is not valid you can see a description for the problem
-				logger.info("Problem description: " + response.getTypeReturnValue().getDescription());
-			}
-		} catch (TheDavidBoxClientException e) {
-			//NMT device is switched off, problem parsing xml response, unreachable IP address, etc...
-			e.printStackTrace();
-		}
+	//Check first that response is valid
+	if (response.isValid()){
+		logger.info("Speed: " + response.getSpeed());
+	} else {
+		//if it is not valid you can see a description for the problem
+		logger.info("Problem description: " + response.getTypeReturnValue().
+            getDescription());
+	}
+} catch (TheDavidBoxClientException e) {
+	//NMT device is switched off, problem parsing xml response, unreachable IP address, etc...
+	e.printStackTrace();
+}
 ```
 
 ## Building / Testing
