@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_vod_supported_format</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<format>mpeg</format>
+	<format>mpg</format>
+	<format>mpe</format>
+	<format>qt</format>
+	<format>mov</format>
+	<format>avi</format>
+	<format>movie</format>
+	<format>mv</format>
+	<format>wmv</format>
+	<format>mp4</format>
+	<format>asf</format>
+	<format>vob</format>
+	<format>mpe</format>
+	<format>ts</format>
+	<format>m2v</format>
+	<format>m2p</format>
+	<format>divx</format>
+	<format>xvid</format>
+	<format>dat</format>
+	<format>m1v</format>
+	<format>m4v</format>
+	<format>dvr-ms</format>
+	<format>m2t</format>
+	<format>vro</format>
+	<format>hnl</format>
+	<format>trp</format>
+	<format>div</format>
+	<format>xvi</format>
+	<format>rmp</format>
+	<format>rmp4</format>
+	<format>m2ts</format>
+	<format>mts</format>
+	<format>tp</format>
+	<format>iso</format>
+	<format>img</format>
+	<format>mkv</format>
+	<format>vdr</format>
+	<format>evo</format>
+	<format>h264</format>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_current_vod_info</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<currentStatus>play</currentStatus>
+	<currentTime>19</currentTime>
+	<downloadSpeed>0</downloadSpeed>
+	<fullPath>...</fullPath>
+	<lastPacketTime>0</lastPacketTime>
+	<mediatype>OTHERS</mediatype>
+	<seekEnable>true</seekEnable>
+	<title>MyVideoTitle</title>
+	<totalTime>1266</totalTime>
+</response>	
+<returnValue>0</returnValue>
+</theDavidBox>
+ 
+ 

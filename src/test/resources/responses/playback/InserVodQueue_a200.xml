@@ -1,0 +1,14 @@
+<theDavidBox>
+    <request>
+        <arg0>insert_vod_queue</arg0>
+        <arg1>sample</arg1>
+        <arg2>
+            file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/video/sample.avi
+        </arg2>
+        <arg3>show</arg3>
+        <arg4>start_zero</arg4>
+        <module>playback</module>
+    </request>
+    <response/>
+    <returnValue>0</returnValue>
+</theDavidBox>

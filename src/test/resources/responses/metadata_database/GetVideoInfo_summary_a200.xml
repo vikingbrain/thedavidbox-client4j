@@ -1,0 +1,76 @@
+<theDavidBox>
+<request>
+	<arg0>get_video_info</arg0>
+	<arg1>/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media.db</arg1>
+	<arg2>s91</arg2>
+	<arg3>summary</arg3>
+	<arg4/>
+	<module>metadata_database</module>
+</request>
+<response>
+	<video_info>
+		<casts>
+			<cast>
+				<id>462</id>
+				<name>Shahrukh Khan</name>
+			</cast>
+			<cast>
+				<id>463</id>
+				<name>Priyanka Chopra</name>
+			</cast>
+			<cast>
+				<id>466</id>
+				<name>Boman Irani</name>
+			</cast>
+			<cast>
+				<id>516</id>
+				<name>Lara Dutta</name>
+			</cast>
+			<cast>
+				<id>517</id>
+				<name>Kunal Kapoor</name>
+			</cast>
+			<cast>
+				<id>467</id>
+				<name>Om Puri</name>
+			</cast>
+			<cast>
+				<id>518</id>
+				<name>Hrithik Roshan</name>
+			</cast>
+		</casts>
+		<date>2011</date>
+		<genres>
+			<genre>Others</genre>
+			<genre_item>
+				<id>17</id>
+				<name>Others</name>
+			</genre_item>
+		</genres>
+		<id>s91</id>
+		<original_path>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/6.9-Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR]/Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR].mkv
+		</original_path>
+		<parental_rating/>
+		<path>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/6.9-Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR]/Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR].mkv
+		</path>
+		<play_count/>
+		<poster>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media/video/poster/xezkjxAGAwKu8t84emhSN5hinM3.jpg
+		</poster>
+		<rating>5</rating>
+		<runtime>8858</runtime>
+		<three_d>0</three_d>
+		<thumbnail>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media/video/thumbnail/thumbnail_91.jpg
+		</thumbnail>
+		<title>Don 2</title>
+		<total_item>1</total_item>
+		<video_type>single_movie</video_type>
+		<wallpaper/>
+		<watch_status>0</watch_status>
+	</video_info>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

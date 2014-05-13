@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>start_vod</arg0>
+	<arg1>sample</arg1>
+	<arg2>file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/video/sample.avi</arg2>
+	<arg3>show</arg3>
+	<arg4></arg4>
+	<module>playback</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

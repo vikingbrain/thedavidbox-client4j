@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_network_shared_folder</arg0>
+	<module>setting</module>
+</request>
+<response>
+	<networkShare>
+		<shareName>My share directory</shareName>
+		<url>nfs://192.168.0.178:/home/video</url>
+	</networkShare>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

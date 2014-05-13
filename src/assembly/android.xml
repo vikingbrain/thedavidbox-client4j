@@ -1,0 +1,24 @@
+<assembly>
+
+    <id>android</id>	
+	
+    <formats>
+        <format>jar</format>
+    </formats>
+  
+	<dependencySets>
+		<dependencySet>
+		  <excludes>
+		  	<!-- Exclude http client beacuse it is included in Android SDK -->
+			<exclude>org.apache.httpcomponents:httpclient</exclude>
+			<exclude>org.apache.httpcomponents:httpcore</exclude>
+
+			<exclude>stax:stax</exclude>
+			<exclude>stax:stax-api</exclude>
+			<exclude>xpp3:xpp3</exclude>
+
+		  </excludes>
+		</dependencySet>
+  </dependencySets>
+  
+</assembly>

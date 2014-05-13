@@ -1,0 +1,13 @@
+<theDavidBox>
+<request>
+	<arg0>check_database</arg0>
+	<arg1>/opt/sybhttpd/localhost.drives/SATA_DISK</arg1>
+	<module>metadata_database</module>
+</request>
+<response>
+	<database_path>
+	/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media.db
+	</database_path>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

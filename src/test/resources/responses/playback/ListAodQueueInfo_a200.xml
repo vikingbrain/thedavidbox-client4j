@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_aod_queue_info</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<queue>
+	<fullpath>
+	file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/Lisa_Ekdahl/02.mp3
+	</fullpath>
+	<index>1</index>
+	<title>MyAudioTitle</title>
+	</queue>
+	<queue>
+	<fullpath>
+	file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/Lisa_Ekdahl/03.mp3
+	</fullpath>
+	<index>2</index>
+	<title>03.mp3</title>
+	</queue>
+	<queue>
+	<fullpath>
+	file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/music/mp3.mp3
+	</fullpath>
+	<index>3</index>
+	<title>mp3.mp3</title>
+	</queue>
+</response>	
+<returnValue>0</returnValue>
+</theDavidBox>

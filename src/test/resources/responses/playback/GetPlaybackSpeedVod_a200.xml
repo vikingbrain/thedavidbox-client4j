@@ -1,0 +1,10 @@
+<theDavidBox>
+	<request>
+		<arg0>get_playback_speed_vod</arg0>
+		<module>playback</module>
+	</request>
+	<response>
+		<speed>1x</speed>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

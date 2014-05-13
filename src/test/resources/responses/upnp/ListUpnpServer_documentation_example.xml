@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_upnp_server</arg0>
+	<module>upnp</module>
+</request>
+<response>
+	<server>
+		<name>server A</name>
+		<url>http://....</url>
+		<authorization>true</authorization>
+	</server>
+	<server>
+		<name>server B</name>
+		<url>http://....</url>
+		<authorization>false</authorization>
+	</server>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

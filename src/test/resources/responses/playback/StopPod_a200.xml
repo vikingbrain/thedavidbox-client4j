@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>stop_pod</arg0>
+	<module>playback</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

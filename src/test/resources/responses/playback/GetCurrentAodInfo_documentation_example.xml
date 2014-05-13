@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_current_aod_info</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<album>The Ultimate Most Relaxing Jaz</album>
+	<artist>Hubert Laws</artist>
+	<currentStatus>play</currentStatus>
+	<currentTime>73</currentTime>
+	<downloadSpeed>0</downloadSpeed>
+	<fullPath>...</fullPath>
+	<lastPacketTime>0</lastPacketTime>
+	<mediatype>OTHERS</mediatype>
+	<seekEnable>true</seekEnable>
+	<title>Kiss</title>
+	<totalTime>337</totalTime>
+</response>	
+<returnValue>0</returnValue>
+</theDavidBox>
+ 
+ 

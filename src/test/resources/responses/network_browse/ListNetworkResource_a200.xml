@@ -1,0 +1,20 @@
+<theDavidBox>
+<request>
+	<arg0>list_network_resource</arg0>
+	<arg1/>
+	<arg2/>
+	<arg3/>
+	<module>network_browse</module>
+</request>
+<response>
+	<networkResource>
+			<name>WORKGROUP</name>
+			<url>WORKGROUP</url>
+	</networkResource>
+	<networkResource>
+			<name>NFS_Servers</name>
+			<url>NFS_Servers</url>
+	</networkResource>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

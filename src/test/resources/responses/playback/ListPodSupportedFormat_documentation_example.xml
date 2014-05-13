@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_vod_supported_format</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<format>gif</format>
+	<format>jpg</format>
+	<format>jpeg</format>
+	<format>jpe</format>
+	<format>png</format>
+	<format>bmp</format>
+	<format>tif</format>
+	<format>tiff</format>	
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

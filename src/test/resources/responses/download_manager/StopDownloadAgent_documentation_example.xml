@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>stop_download_agent</arg0>
+	<module>download_manager</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

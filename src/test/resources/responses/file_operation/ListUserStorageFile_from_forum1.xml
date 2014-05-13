@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theDavidBox>
+<request>
+	<arg0>list_user_storage_file</arg0>
+	<arg1 />
+	<arg10>false</arg10>
+	<arg2 />
+	<arg3>20</arg3>
+	<arg4>true</arg4>
+	<arg5>true</arg5>
+	<arg6>true</arg6>
+	<arg7>all</arg7>
+	<arg8>name_asc</arg8>
+	<arg9>false</arg9>
+	<module>file_operation</module>
+</request>
+<response>
+	<availableFile>0</availableFile>
+	<availableFolder>2</availableFolder>
+	<fileList>
+	  <file>
+		<device_type>usb</device_type>
+		<isFolder>yes</isFolder>
+		<lastAccessDate>Tue Mar 13 22:04:48 2012</lastAccessDate>
+		<modifyDate>Mon Jun 28 21:30:12 2010</modifyDate>
+		<name>USB_DRIVE_1</name>
+		<path>/opt/sybhttpd/localhost.drives/USB_DRIVE</path>
+		<size>4096</size>
+	  </file>
+	  <file>
+		<device_type>samba</device_type>
+		<isFolder>yes</isFolder>
+		<lastAccessDate />
+		<modifyDate />
+		<name>Video</name>
+		<path>smb://[foo=bar]GIGANTO/Video</path>
+		<size />
+	  </file>
+	</fileList>
+	<totalFile>2</totalFile>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

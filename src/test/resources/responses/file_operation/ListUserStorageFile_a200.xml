@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_user_storage_file</arg0>
+	<arg1>/opt/sybhttpd/localhost.drives/SATA_DISK</arg1>
+	<arg2>0</arg2>
+	<arg3>100</arg3>
+	<arg4>true</arg4>
+	<arg5>false</arg5>
+	<arg6>false</arg6>
+	<arg7></arg7>
+	<arg8></arg8>
+	<arg9>false</arg9>
+	<module>file_operation</module>
+</request>
+<response>
+	<availableFolder>8</availableFolder>
+	<fileList>
+		<file>
+			<isFolder>yes</isFolder>
+			<name>Apps</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/Apps</path>
+		</file>
+		<file>
+			<isFolder>yes</isFolder>
+			<name>Download</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/Download</path>
+		</file>
+		<file>
+			<isFolder>yes</isFolder>
+			<name>Music</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/Music</path>
+		</file>
+		<file>
+			<isFolder>yes</isFolder>
+			<name>Photo</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/Photo</path>
+		</file>
+		<file>
+			<isFolder>yes</isFolder>
+			<name>Video</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/Video</path>
+		</file>
+		<file>
+			<isFolder>yes</isFolder>
+			<name>zmusic_corizonas</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/zmusic_corizonas</path>
+		</file>
+			<file>
+			<isFolder>yes</isFolder>
+			<name>ztesting</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/ztesting</path>
+		</file>
+		<file>
+			<isFolder>yes</isFolder>
+			<name>ztesting folders</name>
+			<path>/opt/sybhttpd/localhost.drives/SATA_DISK/ztesting folders</path>
+		</file>
+	</fileList>
+	<prefix>/opt/sybhttpd/localhost.drives/SATA_DISK</prefix>
+	<totalFile>8</totalFile>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

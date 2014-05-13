@@ -1,0 +1,26 @@
+<theDavidBox>
+<request>
+	<arg0>list_aod_supported_format</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<format>wav</format>
+	<format>m4a</format>
+	<format>mpga</format>
+	<format>mp2</format>
+	<format>mp3</format>
+	<format>pcm</format>
+	<format>ogg</format>
+	<format>wma</format>
+	<format>mp1</format>
+	<format>ac3</format>
+	<format>aac</format>
+	<format>mpa</format>
+	<format>pls</format>
+	<format>dts</format>
+	<format>flac</format>
+	<format>mka</format>
+	<format>m3u</format>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

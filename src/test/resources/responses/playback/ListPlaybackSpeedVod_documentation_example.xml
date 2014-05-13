@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_playback_speed_vod</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<speed>-16x</speed>
+	<speed>-8x</speed>
+	<speed>-4x</speed>
+	<speed>-2x</speed>
+	<speed>0</speed>
+	<speed>1/8x</speed>
+	<speed>1/4x</speed>
+	<speed>1/2x</speed>
+	<speed>1x</speed>
+	<speed>2x</speed>
+	<speed>4x</speed>
+	<speed>6x</speed>
+	<speed>8x</speed>
+	<speed>16x</speed>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

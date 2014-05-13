@@ -1,0 +1,14 @@
+<theDavidBox>
+    <request>
+        <arg0>get_device_info</arg0>
+        <arg1>SATA_DISK_1</arg1>
+        <module>system</module>
+    </request>
+    <response>
+        <accessPath>SATA_DISK</accessPath>
+        <freeDiskSpace>109063557120</freeDiskSpace>
+        <size>981026435072</size>
+        <type>harddisk</type>
+    </response>
+    <returnValue>0</returnValue>
+</theDavidBox>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_video_info</arg0>
+	<arg1>/SATA_DISK/nmj_database/media.db</arg1>
+	<arg2>s13</arg2>
+	<arg3>full</arg3>
+	<arg4></arg4>
+	<module>metadata_database</module>
+</request>
+<response>
+	<video_info>
+		<casts>
+			<cast>
+				<id>191</id>
+				<name>Spencer Tracy</name>
+			</cast>
+			<cast>
+				<id>194</id>
+				<name>Dean Jagger</name>
+			</cast>
+			<cast>
+				<id>195</id>
+				<name>Walter Brennan</name>
+			</cast>
+		</casts>
+		<chapters></chapters>
+		<date>3001-07-14</date>
+		<dimension></dimension>
+		<directors>
+			<director>
+				<id>4</id>
+				<name>Milo Ventimiglia</name>
+			</director>
+		</directors>
+		<genres>
+			<genre>Drama</genre>
+			<genre>Sci-Fi</genre>
+		</genres>
+		<id>s13</id>
+		<lastwatchscene></lastwatchscene>
+		<parental_rating></parental_rating>
+		<path>
+		/fullpath/Bad Day at Black Rock.avi
+		</path>
+		<play_count></play_count>
+		<poster>/path/poster/Heroes.jpg</poster>
+		<producers></producers>
+		<rating>25</rating>
+		<resolution>720p</resolution>
+		<runtime></runtime>
+		<three_d>0</three_d>
+		<subtitles/>
+		<synopsis>video synopsis.</synopsis>
+		<system>asf</system>
+		<thumbnail>/path/thumbnail/Heroes.jpg</thumbnail>
+		<title>Bad Day at Black Rock</title>
+		<total_item>1</total_item>
+		<video_codec>wmv</video_codec>
+		<video_list>
+			<item>
+			<bookmark></bookmark>
+			<dimension></dimension>
+			<item_no>1</item_no>
+			<item_title>Heroes 1</item_title>
+			<path>/path/video/Madagascar.avi</path>
+			<runtime>6780</runtime>
+			<video_id>v13</video_id>
+			</item>
+			<total>1</total>
+		</video_list>
+		<video_type>single_movie</video_type>
+		<wallpaper></wallpaper>
+		<watch_status>0</watch_status>
+	</video_info>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

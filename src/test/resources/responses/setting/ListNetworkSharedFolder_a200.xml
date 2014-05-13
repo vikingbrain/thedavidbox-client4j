@@ -1,0 +1,8 @@
+<theDavidBox>
+<request>
+	<arg0>list_network_shared_folder</arg0>
+	<module>setting</module>
+</request>
+<response/>
+	<returnValue>12</returnValue>
+</theDavidBox>

@@ -1,0 +1,13 @@
+<theDavidBox>
+    <request>
+        <arg0>insert_aod_queue</arg0>
+        <arg1>sample</arg1>
+        <arg2>
+            file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/music/sample.mp3
+        </arg2>
+        <arg3>show</arg3>
+        <module>playback</module>
+    </request>
+    <response/>
+    <returnValue>0</returnValue>
+</theDavidBox>

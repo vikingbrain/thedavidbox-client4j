@@ -1,0 +1,28 @@
+<theDavidBox>
+<request>
+	<arg0>list_user_storage_file</arg0>
+	<arg1/>
+	<arg2>0</arg2>
+	<arg3>10</arg3>
+	<arg4>true</arg4>
+	<arg5>true</arg5>
+	<arg6>true</arg6>
+	<arg7/>
+	<module>file_operation</module>
+</request>
+<response>
+	<availableFile>0</availableFile>
+	<availableFolder>1</availableFolder>
+	<fileList>
+		<file>
+			<isFolder>yes</isFolder>
+			<modifyDate>Sun Jun 26 20:08:05 2011</modifyDate>
+			<name>SATA_DISK</name>
+			<path>/opt/sybhttpd/localhost.drives//SATA_DISK</path>
+			<size>4096</size>
+		</file>
+	</fileList>
+	<totalFile>1</totalFile>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

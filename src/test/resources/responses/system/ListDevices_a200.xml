@@ -1,0 +1,15 @@
+<theDavidBox>
+    <request>
+        <arg0>list_devices</arg0>
+        <module>system</module>
+    </request>
+    <response>
+        <device>
+            <accessPath>SATA_DISK</accessPath>
+            <name>SATA_DISK_1</name>
+            <type>harddisk</type>
+            <url>/opt/sybhttpd/localhost.drives/SATA_DISK</url>
+        </device>
+    </response>
+    <returnValue>0</returnValue>
+</theDavidBox>

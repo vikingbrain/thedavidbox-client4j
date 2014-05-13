@@ -1,0 +1,17 @@
+<theDavidBox>
+	<request>
+		<arg0>list_pod_supported_format</arg0>
+		<module>playback</module>
+	</request>
+	<response>
+		<format>jpeg</format>
+		<format>jpg</format>
+		<format>jpe</format>
+		<format>png</format>
+		<format>bmp</format>
+		<format>gif</format>
+		<format>tif</format>
+		<format>tiff</format>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+     <arg0>list_compact_video_wall</arg0>
+     <arg1>/SATA_DISK/nmt_database/nmt.db</arg1>
+     <arg2>0</arg2>
+     <arg3>4</arg3>
+     <arg4>8</arg4>
+     <arg5>movie</arg5>
+     <module>metadata_database</module>
+</request>
+<response>
+     <category>
+          <title>recently watched</title>
+          <all_videos>
+               <video>
+                    <id>s1</id>
+                    <three_d>0</three_d>
+                    <thumbnail>/fullpathchristmas/1.jpg</thumbnail>
+               </video>
+               <video>
+                    <id>s2</id>
+                    <three_d>0</three_d>
+                    <thumbnail>/fullpath/christmas/2.jpg</thumbnail>
+               </video>
+          </all_videos>
+     </category>
+     <category>
+          <title>a-c</title>
+          <all_videos>
+               <video>
+                    <id>s3</id>
+                    <three_d>0</three_d>
+                    <thumbnail>/fullpath/old/1.jpg</thumbnail>
+               </video>
+               <video>
+                    <id>s4</id>
+                    <three_d>0</three_d>
+                    <thumbnail>/fullpath/old/2.jpg</thumbnail>
+               </video>
+          </all_videos>
+     </category>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>               

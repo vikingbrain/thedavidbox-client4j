@@ -1,0 +1,14 @@
+<theDavidBox>
+<request>
+	<arg0>get_user_storage_file_info</arg0>
+	<arg1>/opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/video/sample.avi</arg1>
+	<module>file_operation</module>
+</request>
+<response>
+	<fileSize>9732096</fileSize>
+	<mimeType>video/x-msvideo</mimeType>
+	<name>sample.avi</name>
+	<permission>read write execute</permission>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

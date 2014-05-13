@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_download_agent_status</arg0>
+	<module>download_manager</module>
+</request>
+<response>
+	<status>1</status>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

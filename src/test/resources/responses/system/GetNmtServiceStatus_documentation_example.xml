@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_nmt_service_status</arg0>
+	<arg1>samba</arg1>
+	<module>system</module>
+</request>
+<response>
+	<status>true</status>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

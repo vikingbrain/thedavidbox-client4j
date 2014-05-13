@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>start_pod</arg0>
+	<arg1>127</arg1>
+	<arg2>file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/photo/127.png</arg2>
+	<arg3>5</arg3>
+	<arg4></arg4>
+	<arg5>show</arg5>
+	<module>playback</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

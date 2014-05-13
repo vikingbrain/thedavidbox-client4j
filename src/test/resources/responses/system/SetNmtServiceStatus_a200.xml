@@ -1,0 +1,10 @@
+<theDavidBox>
+<request>
+	<arg0>set_nmt_service_status</arg0>
+	<arg1>ftp</arg1>
+	<arg2>false</arg2>
+	<module>system</module>
+</request>
+<response/>
+<returnValue>0</returnValue>
+</theDavidBox>

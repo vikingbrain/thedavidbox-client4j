@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_video_info</arg0>
+	<arg1>USB_DRIVE_A-1/nmj_database/media.db</arg1>
+	<arg2>s13</arg2>
+	<arg3>summary</arg3>
+	<module>metadata_database</module>
+</request>
+<response>
+	<video_info>
+		<cast>
+			<id>191</id>
+			<name>Spencer Tracy</name>
+		</cast>
+		<cast>
+			<id>194</id>
+			<name>Dean Jagger</name>
+		</cast>
+		<cast>
+			<id>195</id>
+			<name>Walter Brennan</name>
+		</cast>
+		<date>3001-12-06</date>
+		<genres>
+			<genre>Drama</genre>
+		</genres>
+		<id>s1</id>
+		<parental_rating>PG</parental_rating>
+		<path>/path/Madagascar.avi</path>
+		<play_count>12</play_count>
+		<poster>/path/poster/8.x264-DON.jpg</poster>
+		<rating>25</rating>
+		<runtime>6780</runtime>
+		<three_d>0</three_d>
+		<thumbnail>/path/thumbnail/8.Mile. x264-DON.jpg</thumbnail>
+		<title>8 Mile</title>
+		<total_item>1</total_item>
+		<wallpaper/>
+		<watch_status>0</watch_status>
+	</video_info>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

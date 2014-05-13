@@ -1,0 +1,9 @@
+<theDavidBox>
+<request>
+	<arg0>send_key</arg0>
+	<arg1>play</arg1>
+	<module>system</module>
+</request>
+<response/>
+<returnValue>0</returnValue>
+</theDavidBox>

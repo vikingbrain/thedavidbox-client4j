@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_upnp_server</arg0>
+    <module>upnp</module>
+</request>
+<response>
+	<server>
+		<authorization>true</authorization>
+        <name>PC: PC:</name>
+        <url>0c921e56-d521-40f2-868b-111111111111</url>
+	</server>
+	<server>
+		<authorization>false</authorization>
+        <name>Plex Media Server: PLEX</name>
+        <url>7e738e33-4815-a144-38aa-222222222222</url>
+	</server>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

@@ -1,0 +1,36 @@
+<theDavidBox>
+<request>
+	<arg0>get_video_info</arg0>
+	<arg1>/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media.db</arg1>
+	<arg2>s91</arg2>
+	<arg3>episode</arg3>
+	<module>metadata_database</module>
+</request>
+<response>
+	<video_episode_info>
+		<aspect_ratio>16:9</aspect_ratio>
+		<display_path>
+		SATA_DISK_1/Video/moviesHD/Rafa Only Like/4.5-4 44 Last Day On Earth 2011 LiMiTED 720p BluRay x264-SPARKS [EtHD]/4.44.last.day.on.earth.2011.limited.720p.bluray.x264-sparks.mkv
+		</display_path>
+		<external_subtitles/>
+		<format>Matroska</format>
+		<frame_rate>23.976</frame_rate>
+		<id>v91</id>
+		<original_path>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/4.5-4 44 Last Day On Earth 2011 LiMiTED 720p BluRay x264-SPARKS [EtHD]/4.44.last.day.on.earth.2011.limited.720p.bluray.x264-sparks.mkv
+		</original_path>
+		<path>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/4.5-4 44 Last Day On Earth 2011 LiMiTED 720p BluRay x264-SPARKS [EtHD]/4.44.last.day.on.earth.2011.limited.720p.bluray.x264-sparks.mkv
+		</path>
+		<release_date>2011-09-07</release_date>
+		<resolution>1280x720</resolution>
+		<subtitles>
+		<subtitle>English</subtitle>
+		</subtitles>
+		<synopsis>
+		A look at what would happen if everyone knew the world was ending.
+		</synopsis>
+	</video_episode_info>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

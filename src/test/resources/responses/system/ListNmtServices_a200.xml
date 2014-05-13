@@ -1,0 +1,16 @@
+<theDavidBox>
+    <request>
+        <arg0>list_nmt_services</arg0>
+        <module>system</module>
+    </request>
+    <response>
+        <services>upnpav</services>
+        <services>myihome</services>
+        <services>ftp</services>
+        <services>samba</services>
+        <services>nfs</services>
+        <services>torrent</services>
+        <services>usenet</services>
+    </response>
+    <returnValue>0</returnValue>
+</theDavidBox>

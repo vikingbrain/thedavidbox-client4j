@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_upnp_server_files</arg0>
+	<arg1>0</arg1>
+	<arg2></arg2>
+	<arg3>0</arg3>
+	<arg4>10</arg4>
+	<arg5>true</arg5>
+	<arg6>true</arg6>
+	<arg7>true</arg7>
+	<arg8>image/png</arg8>
+	<module>upnp</module>
+</request>
+<response>
+	<fileList>
+		<file>
+			<directoryId>21</directoryId>
+			<isFolder>yes</isFolder>
+			<name>folder a</name>
+		</file>
+		<file>
+			<directoryId>22</directoryId>
+			<isFolder>yes</isFolder>
+			<name>folder b</name>
+		</file>
+		<file>
+			<isFolder>no</isFolder>
+			<filePath>http://server/c.png</filePath>
+		</file>
+		<file>
+			<isFolder>no</isFolder>
+			<filePath>http://server/d.png</filePath>
+		</file>
+	</fileList>
+	<totalFile>4</totalFile>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

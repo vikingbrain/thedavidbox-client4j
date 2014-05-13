@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_devices</arg0>
+	<module>system</module>
+</request>
+<response>
+	<device>
+		<accessPath>file:///Sata-1/</accessPath>
+		<name>SATA_DISK</name>
+		<type>harddisk</type>
+		<url>/opt/sybhttpd/localhost.drives/Sata-1</url>
+	</device>
+	<device>
+		<accessPath>file:///usb-1/</accessPath>
+		<name>usb-1</name>
+		<type>usb</type>
+		<url>/opt/sybhttpd/localhost.drives/usb-1</url>
+	</device>
+	<device>
+		<accessPath>file:///cdrom-1/</accessPath>
+		<name>cd rom-1</name>
+		<type>cd rom</type>
+		<url>/opt/sybhttpd/localhost.drives/cdrom-1</url>
+	</device>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

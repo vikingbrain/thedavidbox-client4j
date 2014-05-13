@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>insert_vod_queue</arg0>
+	<arg1>MyVideoTitle</arg1>
+	<arg2>http://...</arg2>
+	<arg3>show</arg3>
+	<arg4>start_zero</arg4>
+	<module>playback</module>
+</request>
+<response>
+	<index>4</index>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

@@ -1,0 +1,15 @@
+<theDavidBox>
+    <request>
+        <arg0>insert_pod_queue</arg0>
+        <arg1>samplee</arg1>
+        <arg2>
+            file:///opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/photo/sample.png
+        </arg2>
+        <arg3>5</arg3>
+        <arg4>rot90</arg4>
+        <arg5>bgrun</arg5>
+        <module>playback</module>
+    </request>
+    <response/>
+    <returnValue>0</returnValue>
+</theDavidBox>

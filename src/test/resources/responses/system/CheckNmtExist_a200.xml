@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>check_nmt_exist</arg0>
+	<module>system</module>
+</request>
+<response>
+	<exist>true</exist>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

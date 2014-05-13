@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>check_database</arg0>
+	<arg1>SATA_DISK/nmj_database/media.db</arg1>
+	<module>metadata_database</module>
+</request>
+<response>
+	<database_path>SATA_DISK/nmj_database/media.db</database_path>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

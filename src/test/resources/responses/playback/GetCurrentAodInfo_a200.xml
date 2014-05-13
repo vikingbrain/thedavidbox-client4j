@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_current_aod_info</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<album>100th Window</album>
+	<artist>Massive Attack</artist>
+	<currentStatus>play</currentStatus>
+	<currentTime>98</currentTime>
+	<downloadSpeed>0</downloadSpeed>
+	<fullPath>
+	/opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/music/mp3.mp3
+	</fullPath>
+	<lastPacketTime>0</lastPacketTime>
+	<mediatype>OTHERS</mediatype>
+	<seekEnable>true</seekEnable>
+	<title>Future Proof</title>
+	<totalTime>340</totalTime>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>
+ 
+ 

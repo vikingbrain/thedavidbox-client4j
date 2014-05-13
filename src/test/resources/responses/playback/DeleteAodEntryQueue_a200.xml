@@ -1,0 +1,9 @@
+<theDavidBox>
+<request>
+<arg0>delete_aod_entry_queue</arg0>
+	<arg1>5</arg1>
+	<module>playback</module>
+</request>
+<response/>
+<returnValue>0</returnValue>
+</theDavidBox>

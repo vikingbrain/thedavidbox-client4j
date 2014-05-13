@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>insert_pod_queue</arg0>
+	<arg1>MyPhotoTitle</arg1>
+	<arg2>http://...</arg2>
+	<arg3>5</arg3>
+	<arg4>rot90</arg4>
+	<arg5>bgrun</arg5>
+	<module>playback</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

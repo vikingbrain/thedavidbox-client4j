@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_network_shared_folder</arg0>
+	<module>setting</module>
+</request>
+<response>
+	<networkShare>
+		<gotPassword>true</gotPassword>
+		<shareName>popcornhour</shareName>
+		<url>smb://[USERNAME=XXXXXXX]IPorSERVERNAME/Popcornhour</url>
+		<userName>USERNAME</userName>
+	</networkShare>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_current_vod_info</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<currentStatus>play</currentStatus>
+	<currentTime>4</currentTime>
+	<downloadSpeed>0</downloadSpeed>
+	<fullPath>
+	/opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/video/Ñá_R&B_video2_mp4.mp4
+	</fullPath>
+	<lastPacketTime>0</lastPacketTime>
+	<mediatype>OTHERS</mediatype>
+	<seekEnable>true</seekEnable>
+	<title>
+	/opt/sybhttpd/localhost.drives/SATA_DISK/ztesting/video/2_mp4.mp4
+	</title>
+	<totalTime>125</totalTime>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>
+ 
+ 

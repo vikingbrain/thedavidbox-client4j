@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_playback_speed_vod</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<speed>2x</speed>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

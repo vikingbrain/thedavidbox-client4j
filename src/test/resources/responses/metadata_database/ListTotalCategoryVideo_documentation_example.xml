@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_total_category_video</arg0>
+	<arg1>[source path]</arg1>
+	<arg2>movie/tv_show/genre/year/rating</arg2>
+	<module>metadata_database</module>
+</request>
+<response>
+	<total>10</total>
+	<all_categories>
+		<category>
+			<id>1</id>
+			<name>recently_watched</name>
+		</category>
+		<category>
+			<id>2</id>
+			<name>a-c</name>
+		</category>
+	</all_categories>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

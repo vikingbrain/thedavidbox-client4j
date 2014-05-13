@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>create_download_task</arg0>
+	<arg1>http://ca.isohunt.com/download/293451849/15c5c28663bc9396239024e7d4787eeb3dbd3196.torrent</arg1>
+	<arg2>FileName</arg2>
+	<module>download_manager</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

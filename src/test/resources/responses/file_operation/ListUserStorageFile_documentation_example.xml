@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+	<arg0>list_user_storage_file</arg0>
+	<arg1>user_storage_path</arg1>
+	<arg2>0</arg2>
+	<arg3>10</arg3>
+	<arg4>true</arg4>
+	<arg5>true</arg5>
+	<arg6>true</arg6>
+	<arg7></arg7>
+	<arg8>name_asc</arg8>
+	<module>file_operation</module>
+</request>
+<response>
+	<availableFile>2</availableFile>
+	<availableFolder>2</availableFolder>
+	<fileList>
+		<file>
+			<isFolder>yes</isFolder>
+			<modifyDate>Fri Feb 18 14:57:38 2011</modifyDate>
+			<name>media</name>
+			<path>/opt/sybhttpd/localhost.drives/user_storage_path/media</path>
+			<size>32768</size>
+		</file>
+		<file>
+			<isFolder>yes</isFolder>
+			<modifyDate>Mon Feb 14 05:22:32 2011</modifyDate>
+			<name>music</name>
+			<path>/opt/sybhttpd/localhost.drives/user_storage_path/music</path>
+			<size>32768</size>
+		</file>
+		<file>
+			<isFolder>no</isFolder>
+			<modifyDate>Mon Jun 15 19:24:50 2009</modifyDate>
+			<name>Sinbad 1080p 50Hz.ts</name>
+			<path>/opt/sybhttpd/localhost.drives/user_storage_path/Sinbad 1080p 50Hz.ts</path>
+			<size>327239864</size>
+			<type>video</type>
+		</file>
+		<file>
+			<isFolder>no</isFolder>
+			<modifyDate>Thu May 12 13:16:46 2011</modifyDate>
+			<name>firmware update.html</name>
+			<path>/opt/sybhttpd/localhost.drives/user_storage_path/file.html</path>
+			<size>304</size>
+			<type>others</type>
+		</file>
+	</fileList>
+	<totalFile>4</totalFile>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

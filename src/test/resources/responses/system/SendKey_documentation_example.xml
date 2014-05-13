@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+	<arg0>send_key</arg0>
+	<arg1>power</arg1>
+	<arg2>playback</arg2>
+	<module>system</module>
+</request>
+<response>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

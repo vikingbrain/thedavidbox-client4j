@@ -1,0 +1,114 @@
+<theDavidBox>
+<request>
+	<arg0>get_video_info</arg0>
+	<arg1>
+	/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media.db
+	</arg1>
+	<arg2>s91</arg2>
+	<arg3>full</arg3>
+	<module>metadata_database</module>
+</request>
+<response>
+	<video_info>
+		<aspect_ratio>2.35:1</aspect_ratio>
+		<casts>
+			<cast>
+				<id>462</id>
+				<name>Shahrukh Khan</name>
+			</cast>
+			<cast>
+				<id>463</id>
+				<name>Priyanka Chopra</name>
+			</cast>
+			<cast>
+				<id>466</id>
+				<name>Boman Irani</name>
+			</cast>
+			<cast>
+				<id>516</id>
+				<name>Lara Dutta</name>
+			</cast>
+			<cast>
+				<id>517</id>
+				<name>Kunal Kapoor</name>
+			</cast>
+			<cast>
+				<id>467</id>
+				<name>Om Puri</name>
+			</cast>
+			<cast>
+				<id>518</id>
+				<name>Hrithik Roshan</name>
+			</cast>
+		</casts>
+		<content_ttid/>
+		<date>2011</date>
+		<directors>
+			<director>Farhan Akhtar</director>
+			<director_item>
+				<id>474</id>
+				<name>Farhan Akhtar</name>
+			</director_item>
+		</directors>
+		<ext>mkv</ext>
+		<format>Matroska</format>
+		<frame_rate>24</frame_rate>
+		<genres>
+			<genre>
+				<id>17</id>
+				<name>Others</name>
+			</genre>
+		</genres>
+		<hash/>
+		<id>s91</id>
+		<lastwatchscene/>
+		<original_path>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/6.9-Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR]/Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR].mkv
+		</original_path>
+		<parental_rating/>
+		<path>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/6.9-Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR]/Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR].mkv
+		</path>
+		<play_count/>
+		<poster>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media/video/poster/xezkjxAGAwKu8t84emhSN5hinM3.jpg
+		</poster>
+		<rating>5</rating>
+		<resolution>1280x544</resolution>
+		<runtime>8858</runtime>
+		<subtitles/>
+		<synopsis>
+		The bosses of the European drug cartel meet in the French Riviera to discuss a new threat emerging from Asia. Don is jeopardizing their business because he is able to sell drugs at a much lower price. The bosses send word out that Don must die. Don has been living in Thailand for the past five years and goes to a remote settlement to pick up a shipment of drugs. Instead of a normal transaction, Don has to fight his way out because the more powerful European bosses want him dead. He then goes back to Malaysia where he surrenders to Roma and Inspector Malik. Don is sentenced to death and sent to a Malaysian prison where he meets Vardhaan. Don and Vardhaan escape the prison by poisoning all the inmates and go to Switzerland where they retrieve the contents of a locker only Vardhaan could access. The locker holds a tape that shows Diwan, the vice president of a money printing bank, bribing someone to kill a competitor.
+		</synopsis>
+		<three_d>0</three_d>
+		<thumbnail>
+		/opt/sybhttpd/localhost.drives/SATA_DISK/nmj_database/media/video/thumbnail/thumbnail_91.jpg
+		</thumbnail>
+		<title>Don 2</title>
+		<total_item>1</total_item>
+		<ttid>tt1285241</ttid>
+		<video_codec>x264</video_codec>
+		<video_list>
+			<item>
+				<hash/>
+				<item_no/>
+				<item_title>Don 2</item_title>
+				<original_path>
+				/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/6.9-Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR]/Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR].mkv
+				</original_path>
+				<path>
+				/opt/sybhttpd/localhost.drives/SATA_DISK/Video/moviesHD/Rafa Only Like/6.9-Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR]/Don 2 - Blu-Ray - 720p - x264 - DTS - [DDR].mkv
+				</path>
+				<runtime>8858</runtime>
+				<video_id>v145</video_id>
+				<watch_status>0</watch_status>
+			</item>
+			<total>1</total>
+		</video_list>
+		<video_type>single_movie</video_type>
+		<wallpaper/>
+		<watch_status>0</watch_status>
+	</video_info>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

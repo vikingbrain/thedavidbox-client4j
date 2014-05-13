@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_current_vod_info</arg0>
+	<module>playback</module>
+</request>
+<response>
+	<currentStatus>play</currentStatus>
+	<currentTime>2480</currentTime>
+	<downloadSpeed>0</downloadSpeed>
+	<fullPath>
+	/opt/sybhttpd/localhost.drives/SATA_DISK/Video/Keeping.Up.mp4
+	</fullPath>
+	<lastPacketTime>0</lastPacketTime>
+	<mediatype>OTHERS</mediatype>
+	<seekEnable>true</seekEnable>
+	<title/>
+	<totalTime>2606</totalTime>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>
+ 
+ 

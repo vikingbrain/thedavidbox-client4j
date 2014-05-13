@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_device_info</arg0>
+	<arg1>usb-1</arg1>
+	<module>system</module>
+</request>
+<response>
+	<freeDiskSpace>700000</freeDiskSpace>
+	<accessPath>file:///usb-1/</accessPath>
+	<size>1024000</size>
+	<type>usb</type>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

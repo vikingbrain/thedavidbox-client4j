@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>start_aod</arg0>
+	<arg1>MyAudioTitle</arg1>
+	<arg2>file:///opt/...</arg2>
+	<arg3></arg3>
+	<module>playback</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

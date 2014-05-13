@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_network_shared_folder</arg0>
+	<module>setting</module>
+</request>
+<response>
+	<networkShare>
+		<gotPassword>false</gotPassword>
+		<shareName>Video</shareName>
+		<url>nfs://[=]10.9.0.3/Library/Media/Video</url>
+		<userName/>
+	</networkShare>
+	<networkShare>
+		<gotPassword>false</gotPassword>
+		<shareName>Music</shareName>
+		<url>nfs://[=]10.9.0.3/Library/Media/Music/General</url>
+		<userName/>
+	</networkShare>
+	<networkShare>
+		<gotPassword>true</gotPassword>
+		<shareName>CIFS</shareName>
+		<url>smb://NAS1000/Library/Media</url>
+		<userName/>
+	</networkShare>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>
