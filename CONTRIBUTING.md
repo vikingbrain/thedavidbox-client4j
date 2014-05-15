@@ -66,4 +66,4 @@ project:
 By contributing your code,
 
 You agree to license your contribution under the terms of the Apache Public License 2.0
-https://github.com/vikingbrain/thedavidbox-client4j/blob/master/LICENSE
+https://github.com/vikingbrain/thedavidbox-client4j/blob/master/LICENSE.md
