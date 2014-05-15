@@ -1,5 +1,5 @@
 # TheDavidBox client for Java (thedavidbox-client4j)
-thedavidbox-client4j is a java HTTP client for consuming TheDavidBox Service API on Networked Media Tank devices such as Popcorn Hour A100, A110, A200, A210, A300, A400, B110, C200, C300, PopBox 3D, PopBox V8, eGreat, Digitek HDX, Kaiboer and others based in NMT system
+thedavidbox-client4j is a Java HTTP client for consuming TheDavidBox Service API on Networked Media Tank devices such as Popcorn Hour A200, A210, A300, A400, A410, C200, C300, PopBox 3D, PopBox V8 based in NMT system
 
 ## Requirements
 
@@ -116,7 +116,7 @@ try {
 
 ## Building / Testing
 
-To build locally you must use java 1.5+ for compiling and apache maven 3.1.1+
+To build locally you must use Java 1.5+ for compiling and apache maven 3.1.1+
 
 ```
 mvn compile
