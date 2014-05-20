@@ -1,4 +1,7 @@
 # TheDavidBox client for Java (thedavidbox-client4j)
+[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=blue)](https://flattr.com/profile/vikingbrain "Donate monthly to this project using Flattr")
+[![PayPal donate button](http://img.shields.io/paypal/donate.png?color=blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9UAHFFF7B2BLG "Donate once-off to this project using Paypal")
+
 thedavidbox-client4j is a Java HTTP client for consuming TheDavidBox Service API on Networked Media Tank devices such as Popcorn Hour A200, A210, A300, A400, A410, C200, C300, PopBox 3D, PopBox V8 based in NMT system
 
 ## Requirements
@@ -116,7 +119,7 @@ try {
 
 ## Building / Testing
 
-To build locally you must use Java 1.5+ for compiling and apache maven 3.1.1+
+To build locally you must use Java 1.5+ for compiling and apache maven 3.0.3+
 
 ```
 mvn compile
