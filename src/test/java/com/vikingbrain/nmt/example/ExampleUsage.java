@@ -1,5 +1,9 @@
-package com.vikingbrain.nmt.client;
+package com.vikingbrain.nmt.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.vikingbrain.nmt.client.TheDavidBoxClient;
 import com.vikingbrain.nmt.client.impl.TheDavidBoxClientImpl;
 import com.vikingbrain.nmt.client.modules.ModulePlayback;
 import com.vikingbrain.nmt.operations.TheDavidboxOperationListener;
@@ -14,23 +18,26 @@ import com.vikingbrain.nmt.util.exceptions.TheDavidBoxClientException;
 
 public class ExampleUsage {
 
-	public static class OperationListener implements TheDavidboxOperationListener{
+	/** Logger. */
+	private static Logger logger = LoggerFactory.getLogger(ExampleUsage.class);
+
+	@SuppressWarnings("all")
+	public static class ExampleOperationListener implements TheDavidboxOperationListener{
 
 		@Override
 		public void onSendHttpRequest(String request) {
-			System.out.println(request);			
+			logger.info(request);			
 		}
 
 		@Override
 		public void onReceiveXmlResponse(String xmlResponse) {
-			System.out.println(xmlResponse);			
+			logger.info(xmlResponse);			
 		}
 		
 	}
 	
 	@SuppressWarnings("all")
 	public static void main(String[] args) throws TheDavidBoxClientException {
-	
 
 		/** Create a client with default client options */
 		TheDavidBoxClient theDavidBoxClient = new TheDavidBoxClientImpl("IPorHostName");
@@ -77,18 +84,18 @@ public class ExampleUsage {
 
 			//Check first that response is valid
 			if (response.isValid()){
-//				logger.info("Speed: " + response.getSpeed());
+				logger.info("Speed: " + response.getSpeed());
 			} else {
 				//if it is not valid you can see a description for the problem
-//				logger.info("Problem description: " + response.getTypeReturnValue().getDescription());
+				logger.info("Problem description: " + response.getTypeReturnValue().getDescription());
 			}
 		} catch (TheDavidBoxClientException e) {
-			//NMT device is switched off, problem parsing xml response, unreachable IP address, etc...	
-			e.printStackTrace();
+			//NMT device is switched off, problem parsing xml response, unreachable IP address, etc...
+			logger.error(e.getMessage());
 		}
 
 
-		TheDavidBoxClient client = new TheDavidBoxClientImpl("IPorHostName", clientOptions, new OperationListener());	
+		TheDavidBoxClient client = new TheDavidBoxClientImpl("IPorHostName", clientOptions, new ExampleOperationListener());	
 	
 	}
 	
