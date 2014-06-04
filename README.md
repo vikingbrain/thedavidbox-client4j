@@ -1,6 +1,6 @@
 # TheDavidBox client for Java (thedavidbox-client4j)
-[![Build Status](http://travis-ci.org/vikingbrain/thedavidbox-client4j.svg?branch=develop)](http://travis-ci.org/vikingbrain/thedavidbox-client4j "Check this project's build status on TravisCI")
-[![Coverage Status](https://coveralls.io/repos/vikingbrain/thedavidbox-client4j/badge.png?branch=develop)](https://coveralls.io/r/vikingbrain/thedavidbox-client4j?branch=develop)
+[![Build Status](http://travis-ci.org/vikingbrain/thedavidbox-client4j.svg?branch=master)](http://travis-ci.org/vikingbrain/thedavidbox-client4j "Check this project's build status on TravisCI")
+[![Coverage Status](https://coveralls.io/repos/vikingbrain/thedavidbox-client4j/badge.png?branch=master)](https://coveralls.io/r/vikingbrain/thedavidbox-client4j?branch=master)
 [![Flattr donate button](http://img.shields.io/flattr/donate.png?color=blue)](https://flattr.com/profile/vikingbrain "Donate monthly to this project using Flattr")
 [![PayPal donate button](http://img.shields.io/paypal/donate.png?color=blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9UAHFFF7B2BLG "Donate once-off to this project using Paypal")
 
@@ -19,7 +19,7 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
     <dependency>
       <groupId>com.vikingbrain</groupId>
       <artifactId>thedavidbox-client4j</artifactId>
-      <version>1.0.0</version> <!-- or whatever the latest version is -->
+      <version>1.1.0</version> <!-- or whatever the latest version is -->
     </dependency>
   </dependencies>
 ```
@@ -27,10 +27,10 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
 If you are not a maven fan:
 
 	Search on maven central for the library version with all dependencies attached:
-	thedavidbox-client4j-1.0.0-jar-with-dependencies.jar 	<!-- or whatever the latest version is -->
+	thedavidbox-client4j-1.1.0-jar-with-dependencies.jar 	<!-- or whatever the latest version is -->
 
 	If you want to use it on an Android app, search on maven central for the libray version with the android classifier:
-	thedavidbox-client4j-1.0.0-android.jar	 <!-- or whatever the latest version is -->
+	thedavidbox-client4j-1.1.0-android.jar	 <!-- or whatever the latest version is -->
 
 ### Quickstart
 
