@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>list_subtitle_vod</arg0>
+		<module>playback</module>
+	</request>
+	<response>
+		<NumberOfTrack>4</NumberOfTrack>
+		<subtitleList>
+			<currentTrack>0</currentTrack>
+			<subtitle>
+				<track>English</track>
+			</subtitle>
+			<subtitle>
+				<track>Chinese</track>
+			</subtitle>
+		</subtitleList>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

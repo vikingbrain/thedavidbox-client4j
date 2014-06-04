@@ -1,0 +1,32 @@
+<theDavidBox>
+	<request>
+		<arg0>list_language</arg0>
+		<module>setting</module>
+	</request>
+	<response>
+		<language>english</language>
+		<language>simplified chinese</language>
+		<language>traditional chinese</language>
+		<language>german</language>
+		<language>greek</language>
+		<language>dutch</language>
+		<language>russian</language>
+		<language>french</language>
+		<language>italian</language>
+		<language>czech</language>
+		<language>swedish</language>
+		<language>spanish</language>
+		<language>polish</language>
+		<language>portuguese</language>
+		<language>bulgarian</language>
+		<language>norwegian</language>
+		<language>hungarian</language>
+		<language>slovenian</language>
+		<language>japanese</language>
+		<language>turkish</language>
+		<language>vietnamese</language>
+		<language>danish</language>
+		<language>hebrew</language>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

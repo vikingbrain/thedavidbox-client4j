@@ -4,6 +4,7 @@ import com.vikingbrain.nmt.client.modules.ModuleDownloadManager;
 import com.vikingbrain.nmt.operations.TheDavidboxOperationFactory;
 import com.vikingbrain.nmt.operations.downloadmanager.CreateDownloadTaskOperation;
 import com.vikingbrain.nmt.operations.downloadmanager.GetDownloadAgentStatusOperation;
+import com.vikingbrain.nmt.operations.downloadmanager.ListDownloadTasksOperation;
 import com.vikingbrain.nmt.operations.downloadmanager.StartDownloadAgentOperation;
 import com.vikingbrain.nmt.operations.downloadmanager.StopDownloadAgentOperation;
 
@@ -47,7 +48,10 @@ public class ModuleDownloadManagerImpl extends AbstractModule implements ModuleD
 		return new CreateDownloadTaskOperation(getOperationFactory(), source, fileName);
 	}
 	
-	//TODO list_download_tasks
+	/** {@inheritDoc} */
+	public ListDownloadTasksOperation buildListDownloadTasksOperation() {
+		return new ListDownloadTasksOperation(getOperationFactory());
+	}	
 	
 	//TODO get_download_task_info
 	

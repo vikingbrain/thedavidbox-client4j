@@ -1,0 +1,10 @@
+<theDavidBox>
+	<request>
+		<arg0>get_nmt_version</arg0>
+		<module>system</module>
+	</request>
+	<response>
+		<nmtVersion>03-04-130708-21-POP-411</nmtVersion>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

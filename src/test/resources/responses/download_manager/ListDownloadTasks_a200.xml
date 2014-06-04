@@ -1,0 +1,10 @@
+<theDavidBox>
+	<request>
+		<arg0>list_download_tasks</arg0>
+		<module>download_manager</module>
+	</request>
+	<response>
+		<taskId>4d753474429d817b80ff9e0c441ca660ec5d2450</taskId>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

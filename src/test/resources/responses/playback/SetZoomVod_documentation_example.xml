@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>set_zoom_vod</arg0>
+	<arg1>99</arg1>
+	<module>playback</module>
+</request>
+<response></response>
+<returnValue>0</returnValue>
+</theDavidBox>

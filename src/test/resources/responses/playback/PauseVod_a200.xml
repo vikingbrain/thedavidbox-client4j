@@ -1,0 +1,8 @@
+<theDavidBox>
+	<request>
+		<arg0>pause_vod</arg0>
+		<module>playback</module>
+	</request>
+	<response />
+	<returnValue>0</returnValue>
+</theDavidBox>

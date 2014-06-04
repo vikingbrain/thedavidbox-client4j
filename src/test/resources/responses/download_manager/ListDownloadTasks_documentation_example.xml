@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_download_tasks</arg0>
+	<module>download_manager</module>
+</request>
+<response>
+	<taskId>5db4e77b5126661ff358bb3b73bfb4970d547cab</taskId>
+	<taskId>15c5c28663bc9396239024e7d4787eeb3dbd3196</taskId>
+	<taskId>2f4d657d321eff1aa98bf9c06fba9954e3830d20</taskId>
+	<taskId>5f4d74cfd6ef263573ef03d10536cf0d5badf6d6</taskId>
+	<taskId>9419f71bb89bf44735952682d77ff27c306a1fd5</taskId>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

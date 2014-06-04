@@ -2,6 +2,7 @@ package com.vikingbrain.nmt.client.modules;
 
 import com.vikingbrain.nmt.operations.downloadmanager.CreateDownloadTaskOperation;
 import com.vikingbrain.nmt.operations.downloadmanager.GetDownloadAgentStatusOperation;
+import com.vikingbrain.nmt.operations.downloadmanager.ListDownloadTasksOperation;
 import com.vikingbrain.nmt.operations.downloadmanager.StartDownloadAgentOperation;
 import com.vikingbrain.nmt.operations.downloadmanager.StopDownloadAgentOperation;
 
@@ -32,6 +33,12 @@ public interface ModuleDownloadManager extends BaseModule {
 	 */
 	StopDownloadAgentOperation buildStopDownloadAgentOperation();
 
+	/**
+	 * It creates an operation that lists all exist download tasks.
+	 * @return the operation created
+	 */	
+	ListDownloadTasksOperation buildListDownloadTasksOperation();
+	
 	/**
 	 * It creates an operation that creates new download task.
 	 * @param source the Content ID, Url, BT file path for download file

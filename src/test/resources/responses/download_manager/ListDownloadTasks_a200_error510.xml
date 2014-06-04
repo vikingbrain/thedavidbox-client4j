@@ -1,0 +1,8 @@
+<theDavidBox>
+<request>
+  <arg0>list_download_tasks</arg0>
+  <module>download_manager</module>
+</request>
+<response/>
+<returnValue>510</returnValue>
+</theDavidBox>

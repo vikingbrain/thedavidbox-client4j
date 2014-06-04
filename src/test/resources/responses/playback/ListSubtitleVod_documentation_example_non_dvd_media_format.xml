@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>list_subtitle_vod</arg0>
+		<module>playback</module>
+	</request>
+	<response>
+		<NumberOfTrack>5</NumberOfTrack>
+		<subtitleList>
+			<colors>
+				<colorOption>white/black</colorOption>
+				
+			</colors>
+			<currentColor>white/black</currentColor>
+			<currentEncoding>English</currentEncoding>
+			<currentOffset>0.0</currentOffset>
+			<currentPosition>70</currentPosition>
+			<currentSize>40</currentSize>
+			<currentTrack>0</currentTrack>
+			<encodings>
+				<encodingOption>English</encodingOption>
+				<encodingOption>Western Europe</encodingOption>
+				
+			</encodings>
+			<offsets>
+				<maxOffset>500.0</maxOffset>
+				<minOffset>-500.0</minOffset>
+				<stepOffset>0.5</stepOffset>
+			</offsets>
+			<positions>
+				<maxPosition>80</maxPosition>
+				<minPosition>0</minPosition>
+				<stepPosition>10</stepPosition>
+			</positions>
+			<sizes>
+				<maxSize>60</maxSize>
+				<minSize>20</minSize>
+				<stepSize>2</stepSize>
+			</sizes>
+			<subtitle>
+				<color>no</color>
+				<encoding>yes</encoding>
+				<language>no</language>
+				<position>no</position>
+				<size>no</size>
+				<timeOffset>yes</timeOffset>
+				<track>1</track>
+			</subtitle>
+			
+		</subtitleList>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

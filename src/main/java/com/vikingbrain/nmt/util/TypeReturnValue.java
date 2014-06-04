@@ -250,6 +250,15 @@ public enum TypeReturnValue {
 		}
 	},
 
+	ERROR_CODE_510 {
+		public String getId() {
+			return "510";
+		}
+		public String getDescription() {
+			return "No torrent tasks existed";
+		}
+	},
+	
 	ERROR_CODE_601 {
 		public String getId() {
 			return "601";

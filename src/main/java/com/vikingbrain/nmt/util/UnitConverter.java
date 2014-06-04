@@ -19,9 +19,11 @@ public class UnitConverter {
 	public static final double SPACE_TB = 1024 * SPACE_GB;
 
 	/**
-	 * Converts size in bytes to human representation with Byte(s),
-	 * KB, MB, GB o TB.
-	 * @param sizeInBytes the size in bytes
+	 * Converts size in bytes to human representation with Byte(s), KB, MB, GB o
+	 * TB.
+	 * 
+	 * @param sizeInBytes
+	 *            the size in bytes
 	 * @return text with Byte(s), KB, MB, GB o TB.
 	 */
 	public static String bytesToHuman(long sizeInBytes) {
@@ -29,21 +31,21 @@ public class UnitConverter {
 		NumberFormat nf = new DecimalFormat();
 		nf.setMaximumFractionDigits(2);
 
-		try {
-			if (sizeInBytes < SPACE_KB) {
-				return nf.format(sizeInBytes) + " Byte(s)";
-			} else if (sizeInBytes < SPACE_MB) {
-				return nf.format(sizeInBytes / SPACE_KB) + " KB";
-			} else if (sizeInBytes < SPACE_GB) {
-				return nf.format(sizeInBytes / SPACE_MB) + " MB";
-			} else if (sizeInBytes < SPACE_TB) {
-				return nf.format(sizeInBytes / SPACE_GB) + " GB";
-			} else {
-				return nf.format(sizeInBytes / SPACE_TB) + " TB";
-			}
-		} catch (Exception e) {
-			return sizeInBytes + " Byte(s)";
-		}
+		//init the human text
+		String humanText = sizeInBytes + " Byte(s)";
 
+		if (sizeInBytes < SPACE_KB) {
+			humanText = nf.format(sizeInBytes) + " Byte(s)";
+		} else if (sizeInBytes < SPACE_MB) {
+			humanText = nf.format(sizeInBytes / SPACE_KB) + " KB";
+		} else if (sizeInBytes < SPACE_GB) {
+			humanText = nf.format(sizeInBytes / SPACE_MB) + " MB";
+		} else if (sizeInBytes < SPACE_TB) {
+			humanText = nf.format(sizeInBytes / SPACE_GB) + " GB";
+		} else {
+			humanText = nf.format(sizeInBytes / SPACE_TB) + " TB";
+		}
+		
+		return humanText;
 	}
 }

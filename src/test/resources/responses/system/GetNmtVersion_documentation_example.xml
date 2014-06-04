@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_nmt_version</arg0>
+	<module>system</module>
+</request>
+<response>
+	<nmtVersion>00-17-090203-15-POP-402</nmtVersion>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

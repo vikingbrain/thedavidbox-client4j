@@ -2,7 +2,17 @@ package com.vikingbrain.nmt.client.modules.impl;
 
 import com.vikingbrain.nmt.client.modules.ModuleSetting;
 import com.vikingbrain.nmt.operations.TheDavidboxOperationFactory;
+import com.vikingbrain.nmt.operations.setting.GetLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.GetRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.GetSubtitleLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.ListLanguageOperation;
 import com.vikingbrain.nmt.operations.setting.ListNetworkSharedFolderOperation;
+import com.vikingbrain.nmt.operations.setting.ListRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.ListSlideShowEffectOperation;
+import com.vikingbrain.nmt.operations.setting.ListSubtitleLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.SetLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.SetRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.SetSubtitleLanguageOperation;
 
 /**
  * It allows to create the operations related to the setting module.
@@ -19,25 +29,55 @@ public class ModuleSettingImpl extends AbstractModule implements ModuleSetting {
 		super(operationFactory);
 	}
 	
-	//TODO list_language
+	/** {@inheritDoc} */
+	public ListLanguageOperation buildListLanguageOperation(){
+		return new ListLanguageOperation(getOperationFactory());
+	}
 	
-	//TODO set_language
+	/** {@inheritDoc} */
+	public SetLanguageOperation buildSetLanguageOperation(String language){
+		return new SetLanguageOperation(getOperationFactory(), language);
+	}
 	
-	//TODO get_language
+	/** {@inheritDoc} */
+	public GetLanguageOperation buildGetLanguageOperation(){
+		return new GetLanguageOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public ListSubtitleLanguageOperation buildListSubtitleLanguageOperation(){
+		return new ListSubtitleLanguageOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public SetSubtitleLanguageOperation buildSetSubtitleLanguageOperation(String language){
+		return new SetSubtitleLanguageOperation(getOperationFactory(), language);
+	}
+		
+	/** {@inheritDoc} */
+	public GetSubtitleLanguageOperation buildGetSubtitleLanguageOperation(){
+		return new GetSubtitleLanguageOperation(getOperationFactory());
+	}
 	
-	//TODO list_subtitle_language
+	/** {@inheritDoc} */
+	public ListRepeatModeOperation buildListRepeatModeOperation(){
+		return new ListRepeatModeOperation(getOperationFactory());
+	}
 	
-	//TODO set_subtitle_language
+	/** {@inheritDoc} */
+	public SetRepeatModeOperation buildSetRepeatModeOperation(String repeatMode){
+		return new SetRepeatModeOperation(getOperationFactory(), repeatMode);
+	}
 	
-	//TODO get_subtitle_language
+	/** {@inheritDoc} */
+	public GetRepeatModeOperation buildGetRepeatModeOperation(){
+		return new GetRepeatModeOperation(getOperationFactory());
+	}
 	
-	//TODO list_repeat_mode
-	
-	//TODO set_repeat_mode
-	
-	//TODO get_repeat_mode
-	
-	//TODO list_slide_show_effect
+	/** {@inheritDoc} */
+	public ListSlideShowEffectOperation buildListSlideShowEffectOperation(){
+		return new ListSlideShowEffectOperation(getOperationFactory());
+	}	
 	
 	//TODO set_slide_show_effect
 	

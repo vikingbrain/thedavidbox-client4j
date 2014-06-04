@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>list_repeat_mode</arg0>
+	<module>setting</module>
+</request>
+<response>
+	<playMode>repeat off</playMode>
+	<playMode>repeat one</playMode>
+	<playMode>repeat all</playMode>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

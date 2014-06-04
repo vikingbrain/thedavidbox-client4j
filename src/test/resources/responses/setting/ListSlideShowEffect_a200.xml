@@ -1,0 +1,15 @@
+<theDavidBox>
+	<request>
+		<arg0>list_slide_show_effect</arg0>
+		<module>setting</module>
+	</request>
+	<response>
+		<style>off</style>
+		<style>fade</style>
+		<style>zoom</style>
+		<style>slide</style>
+		<style>spiral</style>
+		<style>random</style>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>
