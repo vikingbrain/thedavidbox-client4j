@@ -10,13 +10,24 @@ import com.vikingbrain.nmt.operations.playback.InsertPodQueueOperation;
 import com.vikingbrain.nmt.operations.playback.InsertVodQueueOperation;
 import com.vikingbrain.nmt.operations.playback.ListAodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListAodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.ListAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListPlaybackSpeedVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListPodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.ListSubtitleVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListVodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.PauseVodOperation;
+import com.vikingbrain.nmt.operations.playback.RepeatVodOperation;
+import com.vikingbrain.nmt.operations.playback.ResumeVodOperation;
+import com.vikingbrain.nmt.operations.playback.SetAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.SetPlaybackSpeedVodOperation;
+import com.vikingbrain.nmt.operations.playback.SetSubtitleVodDvdOperation;
+import com.vikingbrain.nmt.operations.playback.SetSubtitleVodNonDvdOperation;
+import com.vikingbrain.nmt.operations.playback.SetTimeSeekVodOperation;
+import com.vikingbrain.nmt.operations.playback.SetZoomVodOperation;
 import com.vikingbrain.nmt.operations.playback.StartAodOperation;
 import com.vikingbrain.nmt.operations.playback.StartPodOperation;
 import com.vikingbrain.nmt.operations.playback.StartVodOperation;
+import com.vikingbrain.nmt.operations.playback.StepVodOperation;
 import com.vikingbrain.nmt.operations.playback.StopAodOperation;
 import com.vikingbrain.nmt.operations.playback.StopPodOperation;
 import com.vikingbrain.nmt.operations.playback.StopVodOperation;
@@ -64,6 +75,85 @@ public interface ModulePlayback extends BaseModule {
 	 * @return the operation created
 	 */
 	SetPlaybackSpeedVodOperation buildSetPlaybackSpeedVodOperation(String speed);
+
+	/**
+	 * It creates a step to next video frame operation.
+	 * @return the operation created
+	 */
+	StepVodOperation buildStepVodOperation();
+	
+	/**
+	 * It creates a toggle the repeat mode operation to repeat VOD playback.
+	 * @return the operation created
+	 */
+	RepeatVodOperation buildRepeatVodOperation();
+
+	/**
+	 * It creates a list all the supported subtitle(s) for current VOD playback operation.
+	 * @return the operation created
+	 */
+	ListSubtitleVodOperation buildListSubtitleVodOperation();
+	
+	/**
+	 * It creates a sets subtitle for current VOD DVD playback ONLY for DVD media format.
+	 * @param track Subtitle (value depends on track as being returned from list_subtitle_vod) 
+	 * @return the operation created
+	 */
+	SetSubtitleVodDvdOperation buildSetSubtitleVodDvdOperation(String track);
+
+	/**
+	 * It creates sets subtitle for current VOD playback ONLY for non-DVD media format.
+	 * @param track Subtitle (value depends on track as being returned from list_subtitle_vod)
+	 * @param color Subtitle Color. Eg: "white/black" (value depends on colorOption as being returned from list_subtitle_vod)
+	 * @param fontSize Subtitle FontSize. Eg:"30" (value must be within maxSize and minSize and must be divisible by stepSize as being returned from list_subtitle_vod)
+	 * @param position Subtitle Position. Eg: "20" (value must be within maxPosition and minPosition and must be divisible by stepPosition as being returned from list_subtitle_vod)
+	 * @param encoding Subtitle Encoding. Eg: "English" (value depends on encodingOption as being returned from list_subtitle_vod)
+	 * @param timeOffset Subtitle TimeOffset. Eg: "300.5" (value must be within maxOffset and minOffset and must be divisible by stepOffset as being returned from list_subtitle_vod)
+	 * @return the operation created
+	 */
+	SetSubtitleVodNonDvdOperation buildSetSubtitleVodNonDvdOperation(String track, String color, int fontSize, 
+			int position, String encoding, String timeOffset);
+		
+	/**
+	 * It creates a list all the audio streams in current file operation.
+	 * @return the operation created
+	 */	
+	ListAudioVodOperation buildListAudioVodOperation();
+	
+	/**
+	 * It creates a set the audio stream in current file.
+	 * @param audioValue (value depends on audio as being returned from ListAudioVodOperation)
+	 * @return the operation created
+	 */	
+	SetAudioVodOperation buildSetAudioVodOperation(String audioValue);
+	
+	/**
+	 * It creates a set time for current VOD playback to seek operation.
+	 * @param hours number of hours
+	 * @param minutes number of minutes 
+	 * @param seconds number of seconds
+	 * @return the operation created
+	 */
+	SetTimeSeekVodOperation buildSetTimeSeekVodOperation(int hours, int minutes, int seconds);
+		
+	/**
+	 * It creates a sets zoom mode for current VOD playback operation
+	 * @param zoomValue Any valid positive number in range 10-400. Note: 100 is normal size.
+	 * @return the operation created
+	 */
+	SetZoomVodOperation buildSetZoomVodOperation(int zoomValue);
+	
+	/**
+	 * It creates a pause VOD operation.
+	 * @return the operation created
+	 */
+	PauseVodOperation buildPauseVodOperation();		
+
+	/**
+	 * It creates a resume VOD operation.
+	 * @return the operation created
+	 */
+	ResumeVodOperation buildResumeVodOperation();		
 
 	/**
 	 * It creates a stop VOD operation.

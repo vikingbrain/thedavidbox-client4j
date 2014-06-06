@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>list_subtitle_language</arg0>
+		<module>setting</module>
+	</request>
+	<response>
+		<language>off</language>
+		<language>english</language>
+		<language>simplified chinese</language>
+		<language>traditional chinese</language>
+		<language>german</language>
+		<language>greek</language>
+		<language>dutch</language>
+		<language>russian</language>
+		<language>french</language>
+		<language>italian</language>
+		<language>czech</language>
+		<language>swedish</language>
+		<language>spanish</language>
+		<language>polish</language>
+		<language>portugese</language>
+		<language>bulgarian</language>
+		<language>norwegian</language>
+		<language>hungarian</language>
+		<language>slovenian</language>
+		<language>japanese</language>
+		<language>turkish</language>
+		<language>vietnam</language>
+		<language>thai</language>
+		<language>danish</language>
+		<language>hebrew</language>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

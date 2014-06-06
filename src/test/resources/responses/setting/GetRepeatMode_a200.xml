@@ -1,0 +1,10 @@
+<theDavidBox>
+	<request>
+		<arg0>get_repeat_mode</arg0>
+		<module>setting</module>
+	</request>
+	<response>
+		<playMode>repeat off</playMode>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

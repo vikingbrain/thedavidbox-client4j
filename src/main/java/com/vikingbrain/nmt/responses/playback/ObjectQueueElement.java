@@ -48,4 +48,10 @@ public class ObjectQueueElement {
 		this.index = index;
 	}	
 
+	@Override
+	public String toString() {
+		return "ObjectQueueElement [fullPath=" + fullPath + ", index=" + index
+				+ "]";
+	}
+	
 }

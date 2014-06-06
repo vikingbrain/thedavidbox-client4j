@@ -1,0 +1,11 @@
+<theDavidBox>
+	<request>
+		<arg0>list_audio_vod</arg0>
+		<module>playback</module>
+	</request>
+	<response>
+		<audio>1</audio>
+		<currentAudio>1</currentAudio>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

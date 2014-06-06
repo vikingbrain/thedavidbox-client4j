@@ -14,19 +14,6 @@ public class Constants {
 	public static final int DAVIDBOX_PORT = 8008;
 
 	public static final String EMPTY_STRING = "";		
-	
-	
-//	public static final String FTP_NMT_DRIVE_NAME_DEFAULT = "/opt/sybhttpd/localhost.drives";
-	
-//	public static final String NMT_BASE_PATH_DEFAULT = "/opt/sybhttpd/localhost.drives";
-	
-//	public static final String MYIHOME_PORT_AND_STREAM = ":8088/stream/file=";
-	
-//	public static final String LLINK_PORT_DEFAULT = "8001";
-
-//	public static enum SERVICE_STATUS { RUNNING, STOPPED, LOADING, UNKNOWN, SENDING_COMMAND };
-
-	public static final int WAITING_TIME_SAME_KEY_IR_REMOTE = 2 * 1000; //2 seconds		
 
 	public static final String STRING_ZERO = "0";
 

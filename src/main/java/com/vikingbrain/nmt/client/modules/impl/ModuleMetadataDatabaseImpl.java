@@ -67,6 +67,7 @@ public class ModuleMetadataDatabaseImpl extends AbstractModule implements Module
 				try {						
 					MetadataDatabase database = getDatabase(networkShare.getUrl());
 					databases.add(database);
+					logger.debug(database.toString());
 				} catch (TheDavidBoxClientException e) {
 					logger.warn("Not found metadata database for network share url: " + networkShare.getUrl());
 				} 

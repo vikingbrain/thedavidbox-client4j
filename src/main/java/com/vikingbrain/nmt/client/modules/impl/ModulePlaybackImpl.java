@@ -12,13 +12,24 @@ import com.vikingbrain.nmt.operations.playback.InsertPodQueueOperation;
 import com.vikingbrain.nmt.operations.playback.InsertVodQueueOperation;
 import com.vikingbrain.nmt.operations.playback.ListAodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListAodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.ListAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListPlaybackSpeedVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListPodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.ListSubtitleVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListVodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.PauseVodOperation;
+import com.vikingbrain.nmt.operations.playback.RepeatVodOperation;
+import com.vikingbrain.nmt.operations.playback.ResumeVodOperation;
+import com.vikingbrain.nmt.operations.playback.SetAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.SetPlaybackSpeedVodOperation;
+import com.vikingbrain.nmt.operations.playback.SetSubtitleVodDvdOperation;
+import com.vikingbrain.nmt.operations.playback.SetSubtitleVodNonDvdOperation;
+import com.vikingbrain.nmt.operations.playback.SetTimeSeekVodOperation;
+import com.vikingbrain.nmt.operations.playback.SetZoomVodOperation;
 import com.vikingbrain.nmt.operations.playback.StartAodOperation;
 import com.vikingbrain.nmt.operations.playback.StartPodOperation;
 import com.vikingbrain.nmt.operations.playback.StartVodOperation;
+import com.vikingbrain.nmt.operations.playback.StepVodOperation;
 import com.vikingbrain.nmt.operations.playback.StopAodOperation;
 import com.vikingbrain.nmt.operations.playback.StopPodOperation;
 import com.vikingbrain.nmt.operations.playback.StopVodOperation;
@@ -76,25 +87,65 @@ public class ModulePlaybackImpl extends AbstractModule implements ModulePlayback
 		return new SetPlaybackSpeedVodOperation(getOperationFactory(), speed);
 	}
 	
-	//TODO step_vod
+	/** {@inheritDoc} */
+	public StepVodOperation buildStepVodOperation(){
+		return new StepVodOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public RepeatVodOperation buildRepeatVodOperation(){
+		return new RepeatVodOperation(getOperationFactory());
+	}
 	
-	//TODO repeat_vod
+	/** {@inheritDoc} */
+	public ListSubtitleVodOperation buildListSubtitleVodDvdOperation(){
+		return new ListSubtitleVodOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public ListSubtitleVodOperation buildListSubtitleVodOperation(){
+		return new ListSubtitleVodOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public SetSubtitleVodDvdOperation buildSetSubtitleVodDvdOperation(String track){
+		return new SetSubtitleVodDvdOperation(getOperationFactory(), track);
+	}
+
+	/** {@inheritDoc} */
+	public SetSubtitleVodNonDvdOperation buildSetSubtitleVodNonDvdOperation(String track, String color, int fontSize, int position, String encoding, String timeOffset){
+		return new SetSubtitleVodNonDvdOperation(getOperationFactory(), track, color, fontSize, position, encoding, timeOffset);
+	}	
 	
-	//TODO list_subtitle_vod
+	/** {@inheritDoc} */
+	public ListAudioVodOperation buildListAudioVodOperation(){
+		return new ListAudioVodOperation(getOperationFactory());
+	}
 	
-	//TODO set_subtitle_vod
+	/** {@inheritDoc} */
+	public SetAudioVodOperation buildSetAudioVodOperation(String audioValue){
+		return new SetAudioVodOperation(getOperationFactory(), audioValue);
+	}
+
+	/** {@inheritDoc} */
+	public SetTimeSeekVodOperation buildSetTimeSeekVodOperation(int hours, int minutes, int seconds){
+		return new SetTimeSeekVodOperation(getOperationFactory(), hours, minutes, seconds);
+	}
 	
-	//TODO list_audio_vod
+	/** {@inheritDoc} */
+	public SetZoomVodOperation buildSetZoomVodOperation(int zoomValue){
+		return new SetZoomVodOperation(getOperationFactory(), zoomValue);
+	}
 	
-	//TODO set_audio_vod
-	
-	//TODO set_time_seek_vod
-	
-	//TODO set_zoom_vod
-	
-	//TODO pause_vod
-	
-	//TODO resume_vod
+	/** {@inheritDoc} */
+	public PauseVodOperation buildPauseVodOperation(){
+		return new PauseVodOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public ResumeVodOperation buildResumeVodOperation(){
+		return new ResumeVodOperation(getOperationFactory());
+	}
 	
 	/** {@inheritDoc} */
 	public StopVodOperation buildStopVodOperation(){

@@ -2,7 +2,10 @@ package com.vikingbrain.nmt.client.modules;
 
 import com.vikingbrain.nmt.operations.system.CheckNmtExistOperation;
 import com.vikingbrain.nmt.operations.system.GetDeviceInfoOperation;
+import com.vikingbrain.nmt.operations.system.GetFirmwareVersionOperation;
+import com.vikingbrain.nmt.operations.system.GetMacAddressOperation;
 import com.vikingbrain.nmt.operations.system.GetNmtServiceStatusOperation;
+import com.vikingbrain.nmt.operations.system.GetNmtVersionOperation;
 import com.vikingbrain.nmt.operations.system.ListDevicesOperation;
 import com.vikingbrain.nmt.operations.system.ListNmtServicesOperation;
 import com.vikingbrain.nmt.operations.system.SendKeyOperation;
@@ -14,6 +17,24 @@ import com.vikingbrain.nmt.operations.system.SetNmtServiceStatusOperation;
  * @author vikingBrain
  */
 public interface ModuleSystem extends BaseModule {
+	
+	/**
+	 * It creates a retrieve current MAC Address operation.
+	 * @return the operation created
+	 */
+	GetMacAddressOperation buildGetMacAddressOperation();
+
+	/**
+	 * It creates a retrieve current firmware version operation.
+	 * @return the operation created
+	 */
+	GetFirmwareVersionOperation buildGetFirmwareVersionOperation();
+	
+	/**
+	 * It creates a retrieve current NMT Apps version operation.
+	 * @return the operation created
+	 */
+	GetNmtVersionOperation buildGetNmtVersionOperation();
 	
 	/**
 	 * It creates a check nmt exist operation.

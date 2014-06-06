@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>7</version>
-  </parent>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<prerequisites>
+		<maven>3.0.3</maven>
+	</prerequisites>
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.vikingbrain</groupId>
 	<artifactId>thedavidbox-client4j</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 	<name>TheDavidBox client for Java</name>
 	<description>A Java HTTP client for consuming TheDavidBox Service API of Networked Media Tank devices</description>
@@ -24,18 +29,33 @@
 		<apache.httpclient.version>4.0.1</apache.httpclient.version>
 		<simple.xml.version>2.7.1</simple.xml.version>
 		<slf4j.api.version>1.7.5</slf4j.api.version>
-		<!-- Versions for testing dependencies -->
+		<!-- Versions for dependencies of testing -->
 		<slf4j.simple.version>1.7.5</slf4j.simple.version>
 		<junit.version>4.11</junit.version>
 		<mockito.all.version>1.9.5</mockito.all.version>
+
+		<!-- Plugins -->
+		<maven-source-plugin.version>2.1.2</maven-source-plugin.version>
+		<maven-gpg-plugin.version>1.1</maven-gpg-plugin.version>
+		<maven-release-plugin.version>2.5</maven-release-plugin.version>
+		<maven-assembly-plugin.version>2.4</maven-assembly-plugin.version>
+		<maven-shade-plugin.version>2.2</maven-shade-plugin.version>
+		<maven-site-plugin.version>3.3</maven-site-plugin.version>
+		<coveralls-maven-plugin.version>2.2.0</coveralls-maven-plugin.version>
+		<maven-pmd-plugin.version>3.0.1</maven-pmd-plugin.version>
+		<maven-javadoc-plugin.version>2.7</maven-javadoc-plugin.version>
+		<jdepend-maven-plugin.version>2.0</jdepend-maven-plugin.version>
+		<cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
+		<maven-surefire-report-plugin.version>2.17</maven-surefire-report-plugin.version>
+		<taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
 	</properties>
 
 	<scm>
-	    <connection>scm:git:git@github.com:vikingbrain/thedavidbox-client4j.git</connection>
-		<url>scm:git:git@github.com:vikingbrain/thedavidbox-client4j.git</url>
+		<connection>scm:git:git@github.com:vikingbrain/thedavidbox-client4j.git</connection>
+		<url>https://www.github.com/vikingbrain/thedavidbox-client4j.git</url>
 		<developerConnection>scm:git:git@github.com:vikingbrain/thedavidbox-client4j.git</developerConnection>
-	  <tag>thedavidbox-client4j-1.0.0</tag>
-  </scm>
+		<tag>thedavidbox-client4j-1.1.0</tag>
+	</scm>
 
 	<licenses>
 		<license>
@@ -45,49 +65,54 @@
 		</license>
 	</licenses>
 
-    <developers>
-        <developer>
-            <id>vikingBrain</id>
-            <name>Rafael Iñigo</name>
-            <email>rafael.inigo@vikingbrain.com</email>
-						<url>http://www.vikingbrain.com</url>
-						<roles>
-							<role>architect</role>
-							<role>developer</role>
-						</roles>
-						<timezone>Europe/Madrid</timezone>
-        </developer>
-    </developers>
+	<ciManagement>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/vikingbrain/thedavidbox-client4j</url>
+	</ciManagement>
 
-	  <distributionManagement>
+	<developers>
+		<developer>
+			<id>vikingBrain</id>
+			<name>Rafael Iñigo</name>
+			<email>rafael.inigo@vikingbrain.com</email>
+			<url>http://www.vikingbrain.com</url>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>Europe/Madrid</timezone>
+		</developer>
+	</developers>
+
+	<distributionManagement>
 		<snapshotRepository>
-		  <id>sonatype-nexus-snapshots</id>
-		  <name>Sonatype OSS</name>
-		  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype OSS</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
-		  <id>sonatype-nexus-staging</id>
-		  <name>Nexus Release Repository</name>
-		  <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>sonatype-nexus-staging</id>
+			<name>Nexus Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
-	  </distributionManagement>
-	  <repositories>
+	</distributionManagement>
+	<repositories>
 		<repository>
-		  <id>sonatype-nexus-snapshots</id>
-		  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		  <releases>
-			<enabled>false</enabled>
-		  </releases>
-		  <snapshots>
-			<enabled>true</enabled>
-		  </snapshots>
+			<id>sonatype-nexus-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
-	  </repositories>
+	</repositories>
 
 	<issueManagement>
-        <system>Github</system>
-        <url>https://github.com/vikingbrain/thedavidbox-client4j/issues</url>
-    </issueManagement>
+		<system>Github</system>
+		<url>https://github.com/vikingbrain/thedavidbox-client4j/issues</url>
+	</issueManagement>
 
 	<dependencies>
 		<dependency>
@@ -101,17 +126,17 @@
 			<version>${simple.xml.version}</version>
 		</dependency>
 		<dependency>
-		  <groupId>org.slf4j</groupId>
-		  <artifactId>slf4j-api</artifactId>
-		  <version>${slf4j.api.version}</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.api.version}</version>
 		</dependency>
 
-		<!-- Dependencies for testing-->
+		<!-- Dependencies for testing -->
 		<dependency>
-		  <groupId>org.slf4j</groupId>
-		  <artifactId>slf4j-simple</artifactId>
-		  <version>${slf4j.simple.version}</version>
-		  <scope>test</scope>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${slf4j.simple.version}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -129,21 +154,37 @@
 
 	<build>
 		<pluginManagement>
-		  <plugins>
-			<plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
-			  <artifactId>maven-release-plugin</artifactId>
-			  <version>2.5</version>
-			  <configuration>
-			  	<pushChanges>false</pushChanges>
-                <localCheckout>true</localCheckout>
-                
-				<mavenExecutorId>forked-path</mavenExecutorId>
-				<useReleaseProfile>false</useReleaseProfile>
-				<arguments>-Psonatype-oss-release</arguments>
-			  </configuration>
-			</plugin>
-		  </plugins>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>${maven-release-plugin.version}</version>
+					<configuration>
+						<pushChanges>false</pushChanges>
+						<localCheckout>true</localCheckout>
+						<mavenExecutorId>forked-path</mavenExecutorId>
+						<useReleaseProfile>false</useReleaseProfile>
+						<arguments>-Psonatype-oss-release</arguments>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>cobertura-maven-plugin</artifactId>
+					<version>${cobertura-maven-plugin.version}</version>
+					<configuration>
+						<formats>
+							<format>html</format>
+							<format>xml</format>
+						</formats>
+						<!-- aggregated reports for multi-module projects -->
+						<aggregate>true</aggregate>
+						<instrumentation>
+							<ignoreTrivial>true</ignoreTrivial>
+						</instrumentation>
+					</configuration>
+				</plugin>
+			</plugins>
 		</pluginManagement>
 		<plugins>
 			<plugin>
@@ -156,152 +197,192 @@
 				</configuration>
 			</plugin>
 
-		  <!-- It makes jar with all dependencies -->
-		  <plugin>
-			<artifactId>maven-assembly-plugin</artifactId>
-			<version>2.4</version>
-			<configuration>
-			  <descriptorRefs>
-				<descriptorRef>jar-with-dependencies</descriptorRef>
-			  </descriptorRefs>
-			</configuration>
-			<executions>
-			  <execution>
-				<id>make-assembly</id>
-				<phase>package</phase>
-				<goals>
-				  <goal>single</goal>
-				</goals>
-			  </execution>
-			</executions>
-		  </plugin>
+			<!-- It makes jar with all dependencies -->
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>${maven-assembly-plugin.version}</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
-	  <!-- It makes jar with dependencies for Android -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>2.2</version>
-        <executions>
-          <execution>
-          	<id>make-uber-assembly-android</id>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-			  <!-- Classifier name -->
-			  <shadedClassifierName>android</shadedClassifierName>
-			  <shadedArtifactAttached>true</shadedArtifactAttached>
-              <artifactSet>
-                <excludes>
-                  <exclude>org.apache.httpcomponents:httpclient</exclude>
-                  <exclude>org.apache.httpcomponents:httpcore</exclude>
-                  <exclude>stax:stax</exclude>
-                  <exclude>stax:stax-api</exclude>
-                  <exclude>xpp3:xpp3</exclude>
-                </excludes>
-              </artifactSet>
-<!--
-			<filters>
-                <filter>
-                    <artifact>*:*</artifact>
-                    <excludes>
-                        <exclude>META-INF/license/**</exclude>
-                        <exclude>META-INF/*</exclude>
-                        <exclude>META-INF/maven/**</exclude>
-                        <exclude>LICENSE</exclude>
-                        <exclude>NOTICE</exclude>
-                        <exclude>/*.txt</exclude>
-                        <exclude>build.properties</exclude>
-                    </excludes>
-                </filter>
-            </filters>
--->
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-<!--
- 			 <plugin>
+			<!-- It makes jar with dependencies for Android -->
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				 <artifactId>maven-jar-plugin</artifactId>
-					<executions>
-					  <execution>
-					    <goals>
-					       <goal>test-jar</goal>
-					    </goals>
-					  </execution>
-					</executions>
- 			 </plugin>
--->
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>${maven-shade-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>make-uber-assembly-android</id>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<!-- Classifier name -->
+							<shadedClassifierName>android</shadedClassifierName>
+							<shadedArtifactAttached>true</shadedArtifactAttached>
+							<artifactSet>
+								<excludes>
+									<exclude>org.apache.httpcomponents:httpclient</exclude>
+									<exclude>org.apache.httpcomponents:httpcore</exclude>
+									<exclude>stax:stax</exclude>
+									<exclude>stax:stax-api</exclude>
+									<exclude>xpp3:xpp3</exclude>
+								</excludes>
+							</artifactSet>
+							<!-- <filters> <filter> <artifact>*:*</artifact> <excludes> <exclude>META-INF/license/**</exclude> 
+								<exclude>META-INF/*</exclude> <exclude>META-INF/maven/**</exclude> <exclude>LICENSE</exclude> 
+								<exclude>NOTICE</exclude> <exclude>/*.txt</exclude> <exclude>build.properties</exclude> 
+								</excludes> </filter> </filters> -->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId> 
+				<executions> <execution> <goals> <goal>test-jar</goal> </goals> </execution> 
+				</executions> </plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>${maven-site-plugin.version}</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>${cobertura-maven-plugin.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.eluder.coveralls</groupId>
+				<artifactId>coveralls-maven-plugin</artifactId>
+				<version>${coveralls-maven-plugin.version}</version>
+			</plugin>
 		</plugins>
 	</build>
 
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>${maven-pmd-plugin.version}</version>
+				<configuration>
+					<linkXref>true</linkXref>
+					<sourceEncoding>${project.reporting.sourceEncoding}</sourceEncoding>
+					<minimumTokens>100</minimumTokens>
+					<targetJdk>${java.version}</targetJdk>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${maven-javadoc-plugin.version}</version>
+				<configuration>
+					<aggregate>true</aggregate>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jdepend-maven-plugin</artifactId>
+				<version>${jdepend-maven-plugin.version}</version>
+			</plugin>
 
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.0.1</version>
-        <configuration>
-          <linkXref>true</linkXref>
-          <sourceEncoding>${project.reporting.sourceEncoding}</sourceEncoding>
-          <minimumTokens>100</minimumTokens>
-          <targetJdk>${java.version}</targetJdk>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>${cobertura-maven-plugin.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>${maven-surefire-report-plugin.version}</version>
+			</plugin>
 
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>taglist-maven-plugin</artifactId>
+				<version>${taglist-maven-plugin.version}</version>
+				<configuration>
+					<tagListOptions>
+						<tagClasses>
+							<tagClass>
+								<displayName>Todo Work</displayName>
+								<tags>
+									<tag>
+										<matchString>todo</matchString>
+										<matchType>ignoreCase</matchType>
+									</tag>
+									<tag>
+										<matchString>FIXME</matchString>
+										<matchType>exact</matchType>
+									</tag>
+								</tags>
+							</tagClass>
+						</tagClasses>
+					</tagListOptions>
+				</configuration>
+			</plugin>
 
-  <profiles>
-    <profile>
-      <id>sonatype-oss-release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <version>2.1.2</version>
-            <executions>
-              <execution>
-                <id>attach-sources</id>
-                <goals>
-                  <goal>jar-no-fork</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>2.7</version>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+		</plugins>
+	</reporting>
+
+	<profiles>
+		<profile>
+			<id>sonatype-oss-release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-source-plugin</artifactId>
+						<version>${maven-source-plugin.version}</version>
+						<executions>
+							<execution>
+								<id>attach-sources</id>
+								<goals>
+									<goal>jar-no-fork</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>${maven-gpg-plugin.version}</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>

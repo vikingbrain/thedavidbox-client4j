@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_subtitle_language</arg0>
+	<module>setting</module>
+</request>
+<response>
+	<language>english</language>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

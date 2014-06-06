@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+  <arg0>get_mac_address</arg0>
+  <module>system</module>
+</request>
+<response>
+  <macAddress>00:00:00:00:00:00</macAddress>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

@@ -1,0 +1,10 @@
+<theDavidBox>
+	<request>
+		<arg0>get_firmware_version</arg0>
+		<module>system</module>
+	</request>
+	<response>
+		<firmwareVersion>03-05-130708-21-POP-411-000</firmwareVersion>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

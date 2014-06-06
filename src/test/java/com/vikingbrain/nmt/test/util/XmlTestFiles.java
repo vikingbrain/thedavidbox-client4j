@@ -26,6 +26,10 @@ public class XmlTestFiles {
 	public static final String STOP_DOWNLOAD_AGENT_DOCUMENTATION_EXAMPLE = FOLDER_DOWNLOAD_MANAGER + "StopDownloadAgent_documentation_example.xml";
 	/** Create download task. */
 	public static final String CREATE_DOWNLOAD_TASK_DOCUMENTATION_EXAMPLE = FOLDER_DOWNLOAD_MANAGER + "CreateDownloadTask_documentation_example.xml";
+	/** List download tasks. */
+	public static final String LIST_DOWNLOAD_TASKS_DOCUMENTATION_EXAMPLE = FOLDER_DOWNLOAD_MANAGER + "ListDownloadTasks_documentation_example.xml";
+	public static final String LIST_DOWNLOAD_TASKS_A200 = FOLDER_DOWNLOAD_MANAGER + "ListDownloadTasks_a200.xml";
+	public static final String LIST_DOWNLOAD_TASKS_A200_ERROR_510 = FOLDER_DOWNLOAD_MANAGER + "ListDownloadTasks_a200_error510.xml";
 	
 	
 	/** FILE OPERTAIONS. */
@@ -136,8 +140,49 @@ public class XmlTestFiles {
 	public static final String STOP_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "StopVod_documentation_example.xml";
 	public static final String STOP_VOD_A200 = FOLDER_PLAYBACK + "StopVod_a200.xml";
 
+	/** Step video response files. */
+	public static final String STEP_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "StepVod_documentation_example.xml";
+	public static final String STEP_VOD_A200 = FOLDER_PLAYBACK + "StepVod_a200.xml";
 
+	/** Repeat video playback response files. */
+	public static final String REPEAT_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "RepeatVod_documentation_example.xml";
+	public static final String REPEAT_VOD_A200 = FOLDER_PLAYBACK + "RepeatVod_a200.xml";
+
+	/** List subtitle vod response files. */
+	public static final String LIST_SUBTITLE_VOD_DOCUMENTATION_EXAMPLE_DVD_MEDIA_FORMAT = FOLDER_PLAYBACK + "ListSubtitleVod_documentation_example_dvd_media_format.xml";
+	public static final String LIST_SUBTITLE_VOD_DOCUMENTATION_EXAMPLE_NON_DVD_MEDIA_FORMAT = FOLDER_PLAYBACK + "ListSubtitleVod_documentation_example_non_dvd_media_format.xml";
+	public static final String LIST_SUBTITLE_VOD_A200 = FOLDER_PLAYBACK + "ListSubtitleVod_a200.xml";
+
+	/** Set subtitle vod response files. */
+	public static final String SET_SUBTITLE_VOD_DVD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "SetSubtitleVodDvd_documentation_example.xml";
+	public static final String SET_SUBTITLE_VOD_NON_DVD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "SetSubtitleVodNonDvd_documentation_example.xml";
+	public static final String SET_SUBTITLE_VOD_NON_DVD_A200 = FOLDER_PLAYBACK + "SetSubtitleVodNonDvd_a200.xml";
+
+	/** List audio vod response files. */
+	public static final String LIST_AUDIO_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListAudioVod_documentation_example.xml";
+	public static final String LIST_AUDIO_VOD_A200 = FOLDER_PLAYBACK + "ListAudioVod_a200.xml";
 	
+	/** Set audio vod response files. */
+	public static final String SET_AUDIO_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "SetAudioVod_documentation_example.xml";
+	public static final String SET_AUDIO_VOD_A200 = FOLDER_PLAYBACK + "SetAudioVod_a200.xml";
+	
+	/** Set time seek vod response files. */
+	public static final String SET_TIME_SEEK_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "SetTimeSeekVod_documentation_example.xml";
+	public static final String SET_TIME_SEEK_VOD_A200 = FOLDER_PLAYBACK + "SetTimeSeekVod_a200.xml";
+	
+	/** Set zoom vod response files. */
+	public static final String SET_ZOOM_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "SetZoomVod_documentation_example.xml";
+	public static final String SET_ZOOM_VOD_A200 = FOLDER_PLAYBACK + "SetZoomVod_a200.xml";
+	
+	/** Pause vod response files. */
+	public static final String PAUSE_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "PauseVod_documentation_example.xml";
+	public static final String PAUSE_VOD_A200 = FOLDER_PLAYBACK + "PauseVod_a200.xml";
+
+	/** Resume vod response files. */
+	public static final String RESUME_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ResumeVod_documentation_example.xml";
+	public static final String RESUME_VOD_A200 = FOLDER_PLAYBACK + "ResumeVod_a200.xml";
+
+		
 	/** SETTING. */
 	public static final String FOLDER_SETTING = "setting/";
 
@@ -147,10 +192,61 @@ public class XmlTestFiles {
 	public static final String LIST_NETWORK_SHARED_FROM_FORUM_1 = FOLDER_SETTING + "ListNetworkSharedFolder_from_forum_1.xml";
 	public static final String LIST_NETWORK_SHARED_FROM_FORUM_2 = FOLDER_SETTING + "ListNetworkSharedFolder_from_forum_2.xml";
 	
+	/** List language response files. */
+	public static final String LIST_LANGUAGE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "ListLanguage_documentation_example.xml";				
+	public static final String LIST_LANGUAGE_A200 = FOLDER_SETTING + "ListLanguage_a200.xml";
+	
+	/** Set language response files. */
+	public static final String SET_LANGUAGE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "SetLanguage_documentation_example.xml";				
+	public static final String SET_LANGUAGE_A200 = FOLDER_SETTING + "SetLanguage_a200.xml";
+
+	/** Get language response files. */
+	public static final String GET_LANGUAGE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "GetLanguage_documentation_example.xml";				
+	public static final String GET_LANGUAGE_A200 = FOLDER_SETTING + "GetLanguage_a200.xml";
+	
+	/** List subtitle language response files. */
+	public static final String LIST_SUBTITLE_LANGUAGE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "ListSubtitleLanguage_documentation_example.xml";				
+	public static final String LIST_SUBTITLE_LANGUAGE_A200 = FOLDER_SETTING + "ListSubtitleLanguage_a200.xml";
+
+	/** Set subtitle language response files. */
+	public static final String SET_SUBTITLE_LANGUAGE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "SetSubtitleLanguage_documentation_example.xml";				
+	public static final String SET_SUBTITLE_LANGUAGE_A200 = FOLDER_SETTING + "SetSubtitleLanguage_a200.xml";
+	
+	/** Get subtitle language response files. */
+	public static final String GET_SUBTITLE_LANGUAGE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "GetSubtitleLanguage_documentation_example.xml";				
+	public static final String GET_SUBTITLE_LANGUAGE_A200 = FOLDER_SETTING + "GetSubtitleLanguage_a200.xml";
+	
+	/** List repeat mode response files. */
+	public static final String LIST_REPEAT_MODE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "ListRepeatMode_documentation_example.xml";				
+	public static final String LIST_REPEAT_MODE_A200 = FOLDER_SETTING + "ListRepeatMode_a200.xml";
+	
+	/** Set repeat mode response files. */
+	public static final String SET_REPEAT_MODE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "SetRepeatMode_documentation_example.xml";				
+	public static final String SET_REPEAT_MODE_A200 = FOLDER_SETTING + "SetRepeatMode_a200.xml";
+
+	/** Get repeat mode response files. */
+	public static final String GET_REPEAT_MODE_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "GetRepeatMode_documentation_example.xml";				
+	public static final String GET_REPEAT_MODE_A200 = FOLDER_SETTING + "GetRepeatMode_a200.xml";
+
+	/** List slide show effect response files. */
+	public static final String LIST_SLIDE_SHOW_EFFECT_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "ListSlideShowEffect_documentation_example.xml";				
+	public static final String LIST_SLIDE_SHOW_EFFECT_A200 = FOLDER_SETTING + "ListSlideShowEffect_a200.xml";
 	
 	
 	/** SYSTEM. */
 	public static final String FOLDER_SYSTEM = "system/";
+
+	/** Get MAC address response files. */	
+	public static final String GET_MAC_ADDRESS_DOCUMENTATION_EXAMPLE = FOLDER_SYSTEM + "GetMacAddress_documentation_example.xml";
+	public static final String GET_MAC_ADDRESS_A200 = FOLDER_SYSTEM + "GetMacAddress_a200.xml";
+
+	/** Get firmware version response files. */	
+	public static final String GET_FIRMWARE_VERSION_DOCUMENTATION_EXAMPLE = FOLDER_SYSTEM + "GetFirmwareVersion_documentation_example.xml";
+	public static final String GET_FIRMWARE_VERSION_A200 = FOLDER_SYSTEM + "GetFirmwareVersion_a200.xml";
+
+	/** Get nmt version response files. */	
+	public static final String GET_NMT_VERSION_DOCUMENTATION_EXAMPLE = FOLDER_SYSTEM + "GetNmtVersion_documentation_example.xml";
+	public static final String GET_NMT_VERSION_A200 = FOLDER_SYSTEM + "GetNmtVersion_a200.xml";
 
 	/** Check nmt exist response files. */
 	public static final String CHECK_NMT_EXIST_DOCUMENTATION_EXAMPLE = FOLDER_SYSTEM + "CheckNmtExist_documentation_example.xml";				

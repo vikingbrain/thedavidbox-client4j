@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+<request>
+	<arg0>get_firmware_version</arg0>
+	<module>system</module>
+</request>
+<response>
+	<firmwareVersion>01-17-090203-15-POP-402-000</firmwareVersion>
+</response>
+<returnValue>0</returnValue>
+</theDavidBox>

@@ -4,7 +4,10 @@ import com.vikingbrain.nmt.client.modules.ModuleSystem;
 import com.vikingbrain.nmt.operations.TheDavidboxOperationFactory;
 import com.vikingbrain.nmt.operations.system.CheckNmtExistOperation;
 import com.vikingbrain.nmt.operations.system.GetDeviceInfoOperation;
+import com.vikingbrain.nmt.operations.system.GetFirmwareVersionOperation;
+import com.vikingbrain.nmt.operations.system.GetMacAddressOperation;
 import com.vikingbrain.nmt.operations.system.GetNmtServiceStatusOperation;
+import com.vikingbrain.nmt.operations.system.GetNmtVersionOperation;
 import com.vikingbrain.nmt.operations.system.ListDevicesOperation;
 import com.vikingbrain.nmt.operations.system.ListNmtServicesOperation;
 import com.vikingbrain.nmt.operations.system.SendKeyOperation;
@@ -25,11 +28,20 @@ public class ModuleSystemImpl extends AbstractModule implements ModuleSystem {
 		super(operationFactory);
 	}
 
-	//TODO get_mac_address
+	/** {@inheritDoc} */
+	public GetMacAddressOperation buildGetMacAddressOperation(){
+		return new GetMacAddressOperation(getOperationFactory());
+	}
 	
-	//TODO get_firmware_version
-	
-	//TODO get_nmt_version
+	/** {@inheritDoc} */
+	public GetFirmwareVersionOperation buildGetFirmwareVersionOperation(){
+		return new GetFirmwareVersionOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public GetNmtVersionOperation buildGetNmtVersionOperation(){
+		return new GetNmtVersionOperation(getOperationFactory());
+	}
 		
 	/** {@inheritDoc} */
 	public CheckNmtExistOperation buildCheckNmtExistOperation(){
