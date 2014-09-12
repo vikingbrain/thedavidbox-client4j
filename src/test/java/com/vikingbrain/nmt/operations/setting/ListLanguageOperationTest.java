@@ -43,7 +43,7 @@ public class ListLanguageOperationTest extends AbstractClientMock {
 	}
 
 	@Test
-	public void checkNmtExistTest() throws Exception {
+	public void listLanguageTest() throws Exception {
 		//Put the expected response in the mock of the http client
 		setXmlFileResponseInHttpMockClient(xmlFileName);		
 				

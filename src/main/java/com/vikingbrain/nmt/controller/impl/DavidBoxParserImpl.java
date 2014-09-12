@@ -16,6 +16,9 @@ import com.vikingbrain.nmt.util.exceptions.TheDavidBoxClientException;
  */
 public class DavidBoxParserImpl implements DavidBoxParser {
 
+	/** Charset encoding. */
+	private static final String CHARSET_ENCODING = "UTF-8";
+	
 	/** The serializer for parsing the response. */
 	private Serializer serializer = new Persister();		
 
@@ -32,7 +35,7 @@ public class DavidBoxParserImpl implements DavidBoxParser {
 		String xmlReady;
 		try {
 			//It repairs the encoding to allow all utf-8 symbols
-			xmlReady = new String(xml.getBytes(), "UTF-8");
+			xmlReady = new String(xml.getBytes(), CHARSET_ENCODING);
 		} catch (UnsupportedEncodingException e) {
 			throw new TheDavidBoxClientException(e);
 		}

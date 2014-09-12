@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>list_screen_saver_time</arg0>
+		<module>setting</module>
+	</request>
+	<response>
+		<time>off</time>
+		<time>1</time>
+		<time>5</time>
+		<time>10</time>
+		<time>15</time>
+		<time>30</time>
+		<time>60</time>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

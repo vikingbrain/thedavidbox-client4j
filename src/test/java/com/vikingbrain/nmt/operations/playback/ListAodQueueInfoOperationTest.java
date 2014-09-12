@@ -33,7 +33,8 @@ public class ListAodQueueInfoOperationTest extends AbstractClientMock {
 	public static Collection<Object[]> data() {		
 		Object[][] data = new Object[][] { 
 				{ XmlTestFiles.LIST_AOD_QUEUE_INFO_DOCUMENTATION_EXAMPLE },				
-				{ XmlTestFiles. LIST_AOD_QUEUE_INFO_A200 }
+				{ XmlTestFiles. LIST_AOD_QUEUE_INFO_A200 },
+				{ XmlTestFiles. LIST_AOD_QUEUE_INFO_A200_TEST2 }
 				};
 	    return Arrays.asList(data);
 	}
@@ -62,6 +63,7 @@ public class ListAodQueueInfoOperationTest extends AbstractClientMock {
         for (ObjectQueueElement element : response.getQueue()){
             Assert.assertFalse("".equals(element.getFullPath()));
             Assert.assertFalse("".equals(element.getIndex()));
+            Assert.assertFalse("".equals(element.getTitle()));
         }
 	}
 

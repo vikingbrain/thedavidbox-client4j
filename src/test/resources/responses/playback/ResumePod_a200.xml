@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <theDavidBox>
 <request>
-	<arg0>delete_aod_entry_queue</arg0>
-	<arg1>5</arg1>
-	<module>playback</module>
+  <arg0>resume_pod</arg0>
+  <module>playback</module>
 </request>
 <response></response>
 <returnValue>0</returnValue>

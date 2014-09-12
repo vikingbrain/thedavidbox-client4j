@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <theDavidBox>
 <request>
-	<arg0>delete_aod_entry_queue</arg0>
-	<arg1>5</arg1>
+	<arg0>list_aod_queue_info</arg0>
 	<module>playback</module>
 </request>
-<response></response>
+<response>
+</response>	
 <returnValue>0</returnValue>
 </theDavidBox>

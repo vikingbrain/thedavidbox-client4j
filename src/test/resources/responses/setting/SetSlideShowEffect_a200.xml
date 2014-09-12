@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>set_slide_show_effect</arg0>
+		<arg1>fade</arg1>
+		<module>setting</module>
+	</request>
+	<response></response>
+	<returnValue>0</returnValue>
+</theDavidBox>

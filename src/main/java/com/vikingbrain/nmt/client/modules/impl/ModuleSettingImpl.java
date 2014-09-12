@@ -3,15 +3,23 @@ package com.vikingbrain.nmt.client.modules.impl;
 import com.vikingbrain.nmt.client.modules.ModuleSetting;
 import com.vikingbrain.nmt.operations.TheDavidboxOperationFactory;
 import com.vikingbrain.nmt.operations.setting.GetLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.GetPhotoIntervalOperation;
 import com.vikingbrain.nmt.operations.setting.GetRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.GetScreenSaverTimeOperation;
+import com.vikingbrain.nmt.operations.setting.GetSlideShowEffectOperation;
 import com.vikingbrain.nmt.operations.setting.GetSubtitleLanguageOperation;
 import com.vikingbrain.nmt.operations.setting.ListLanguageOperation;
 import com.vikingbrain.nmt.operations.setting.ListNetworkSharedFolderOperation;
+import com.vikingbrain.nmt.operations.setting.ListPhotoIntervalOperation;
 import com.vikingbrain.nmt.operations.setting.ListRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.ListScreenSaverTimeOperation;
 import com.vikingbrain.nmt.operations.setting.ListSlideShowEffectOperation;
 import com.vikingbrain.nmt.operations.setting.ListSubtitleLanguageOperation;
 import com.vikingbrain.nmt.operations.setting.SetLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.SetPhotoIntervalOperation;
 import com.vikingbrain.nmt.operations.setting.SetRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.SetScreenSaverTimeOperation;
+import com.vikingbrain.nmt.operations.setting.SetSlideShowEffectOperation;
 import com.vikingbrain.nmt.operations.setting.SetSubtitleLanguageOperation;
 
 /**
@@ -79,21 +87,54 @@ public class ModuleSettingImpl extends AbstractModule implements ModuleSetting {
 		return new ListSlideShowEffectOperation(getOperationFactory());
 	}	
 	
-	//TODO set_slide_show_effect
+	/** {@inheritDoc} */
+	public SetSlideShowEffectOperation buildSetSlideShowEffectOperation(String slideShowEffect){
+		return new SetSlideShowEffectOperation(getOperationFactory(), slideShowEffect);
+	}	
 	
-	//TODO get_slide_show_effect
+	/** {@inheritDoc} */
+	public GetSlideShowEffectOperation buildGetSlideShowEffectOperation(){
+		return new GetSlideShowEffectOperation(getOperationFactory());
+	}	
 	
-	//TODO list_photo_interval
+	/** {@inheritDoc} */
+	public ListPhotoIntervalOperation buildListPhotoIntervalOperation(){
+		return new ListPhotoIntervalOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public SetPhotoIntervalOperation buildSetPhotoIntervalOperation(String time){
+		return new SetPhotoIntervalOperation(getOperationFactory(), time);
+	}
 	
-	//TODO set_photo_interval
+	/** {@inheritDoc} */
+	public GetPhotoIntervalOperation buildGetPhotoIntervalOperation(){
+		return new GetPhotoIntervalOperation(getOperationFactory());
+	}
 	
-	//TODO get_photo_interval
+	/** {@inheritDoc} */
+	public ListScreenSaverTimeOperation buildListScreenSaverTimeOperation(){
+		return new ListScreenSaverTimeOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public SetScreenSaverTimeOperation buildSetScreenSaverTimeOperation(String time){
+		return new SetScreenSaverTimeOperation(getOperationFactory(), time);
+	}
 	
+	/** {@inheritDoc} */
+	public GetScreenSaverTimeOperation buildGetScreenSaverTimeOperation(){
+		return new GetScreenSaverTimeOperation(getOperationFactory());
+	}
+
 	//TODO list_screen_saver_time
 	
 	//TODO set_screen_saver_time
 	
 	//TODO get_screen_saver_time
+	
+	
+	
 	
 	//TODO set_setup_page_lock
 	
@@ -132,12 +173,6 @@ public class ModuleSettingImpl extends AbstractModule implements ModuleSetting {
 	//TODO set_hdmi_audio
 	
 	//TODO get_hdmi_audio
-	
-	//TODO list_surround_mode
-	
-	//TODO set_surround_mode
-	
-	//TODO get_surround_mode
 	
 	//TODO list_dts_audio_mode
 	

@@ -16,6 +16,9 @@ public class ObjectQueueElement {
 	@Element(name="index")
 	private String index;
 	
+	@Element(name="title")
+	private String title;
+	
 	/**
 	 * Getter of property.
 	 * @return the fullPath
@@ -48,10 +51,26 @@ public class ObjectQueueElement {
 		this.index = index;
 	}	
 
+	/**
+	 * Getter of property.
+	 * @return the title
+	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * Setter of property.
+	 * @param title the title
+	 */
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
 	@Override
 	public String toString() {
 		return "ObjectQueueElement [fullPath=" + fullPath + ", index=" + index
-				+ "]";
+				+ ", title=" + title + "]";
 	}
 	
 }

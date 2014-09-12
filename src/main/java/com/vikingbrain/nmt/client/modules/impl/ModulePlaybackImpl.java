@@ -3,6 +3,8 @@ package com.vikingbrain.nmt.client.modules.impl;
 import com.vikingbrain.nmt.client.modules.ModulePlayback;
 import com.vikingbrain.nmt.operations.TheDavidboxOperationFactory;
 import com.vikingbrain.nmt.operations.playback.DeleteAodEntryQueueOperation;
+import com.vikingbrain.nmt.operations.playback.DeletePodEntryQueueOperation;
+import com.vikingbrain.nmt.operations.playback.DeleteVodEntryQueueOperation;
 import com.vikingbrain.nmt.operations.playback.GetCurrentAodInfoOperation;
 import com.vikingbrain.nmt.operations.playback.GetCurrentPodInfoOperation;
 import com.vikingbrain.nmt.operations.playback.GetCurrentVodInfoOperation;
@@ -14,11 +16,17 @@ import com.vikingbrain.nmt.operations.playback.ListAodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListAodSupportedFormatOperation;
 import com.vikingbrain.nmt.operations.playback.ListAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListPlaybackSpeedVodOperation;
+import com.vikingbrain.nmt.operations.playback.ListPodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListPodSupportedFormatOperation;
 import com.vikingbrain.nmt.operations.playback.ListSubtitleVodOperation;
+import com.vikingbrain.nmt.operations.playback.ListVodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListVodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.PauseAodOperation;
+import com.vikingbrain.nmt.operations.playback.PausePodOperation;
 import com.vikingbrain.nmt.operations.playback.PauseVodOperation;
 import com.vikingbrain.nmt.operations.playback.RepeatVodOperation;
+import com.vikingbrain.nmt.operations.playback.ResumeAodOperation;
+import com.vikingbrain.nmt.operations.playback.ResumePodOperation;
 import com.vikingbrain.nmt.operations.playback.ResumeVodOperation;
 import com.vikingbrain.nmt.operations.playback.SetAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.SetPlaybackSpeedVodOperation;
@@ -52,15 +60,7 @@ public class ModulePlaybackImpl extends AbstractModule implements ModulePlayback
 	/** {@inheritDoc} */
 	public ListVodSupportedFormatOperation buildListVodSupportedFormatOperation(){
 		return new ListVodSupportedFormatOperation(getOperationFactory());
-	}
-	
-	//TODO next_dvd
-	
-	//TODO previous_dvd
-	
-	//TODO menu_dvd
-	
-	//TODO title_dvd
+	}	
 		
 	/** {@inheritDoc} */
 	public StartVodOperation buildStartVodOperation(String filePath){
@@ -159,9 +159,15 @@ public class ModulePlaybackImpl extends AbstractModule implements ModulePlayback
 
 	//TODO next_vod_in_queue
 	
-	//TODO delete_vod_entry_queue
+    /** {@inheritDoc} */
+	public DeleteVodEntryQueueOperation buildDeleteVodEntryQueueOperation(String index){
+		return new DeleteVodEntryQueueOperation(getOperationFactory(), index);
+	}
 	
-	//TODO list_vod_queue_info
+    /** {@inheritDoc} */
+	public ListVodQueueInfoOperation buildListVodQueueInfoOperation(){
+		return new ListVodQueueInfoOperation(getOperationFactory());
+	}	
 	
 	/** {@inheritDoc} */
 	public ListAodSupportedFormatOperation buildListAodSupportedFormatOperation(){
@@ -178,9 +184,15 @@ public class ModulePlaybackImpl extends AbstractModule implements ModulePlayback
 		return new GetCurrentAodInfoOperation(getOperationFactory());
 	}
 
-	//TODO pause_aod
-	
-	//TODO resume_aod
+	/** {@inheritDoc} */
+	public PauseAodOperation buildPauseAodOperation(){
+		return new PauseAodOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public ResumeAodOperation buildResumeAodOperation(){
+		return new ResumeAodOperation(getOperationFactory());
+	}
 	
 	//TODO repeat_aod
 	
@@ -223,9 +235,15 @@ public class ModulePlaybackImpl extends AbstractModule implements ModulePlayback
 		return new GetCurrentPodInfoOperation(getOperationFactory());
 	}
 
-	//TODO pause_pod
-	
-	//TODO resume_pod
+	/** {@inheritDoc} */
+	public PausePodOperation buildPausePodOperation(){
+		return new PausePodOperation(getOperationFactory());
+	}
+
+	/** {@inheritDoc} */
+	public ResumePodOperation buildResumePodOperation(){
+		return new ResumePodOperation(getOperationFactory());
+	}	
 	
 	//TODO set_zoom_pod
 	
@@ -241,13 +259,15 @@ public class ModulePlaybackImpl extends AbstractModule implements ModulePlayback
 
 	//TODO next_pod_in_queue
 	
-	//TODO delete_pod_entry_queue
+    /** {@inheritDoc} */
+	public DeletePodEntryQueueOperation buildDeletePodEntryQueueOperation(String index){
+		return new DeletePodEntryQueueOperation(getOperationFactory(), index);
+	}
 	
-	//TODO list_pod_queue_info
-	
-	//TODO prev_playlist_aod_in_queue
-	
-	//TODO next_playlist_aod_in_queue
+    /** {@inheritDoc} */
+	public ListPodQueueInfoOperation buildListPodQueueInfoOperation(){
+		return new ListPodQueueInfoOperation(getOperationFactory());
+	}	
 	
 	//TODO start_database_aod
 	

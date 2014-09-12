@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>list_photo_interval</arg0>
+		<module>setting</module>
+	</request>
+	<response>
+		<time>1</time>
+		<time>2</time>
+		<time>3</time>
+		<time>4</time>
+		<time>6</time>
+		<time>8</time>
+		<time>10</time>
+		<time>15</time>
+		<time>20</time>
+		<time>30</time>
+		<time>40</time>
+		<time>50</time>
+		<time>60</time>
+		<time>120</time>
+		<time>300</time>
+		<time>600</time>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>

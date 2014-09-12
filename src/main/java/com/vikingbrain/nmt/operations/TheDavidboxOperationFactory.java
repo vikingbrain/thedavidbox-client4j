@@ -14,6 +14,7 @@ import com.vikingbrain.nmt.util.ClientOptions;
 import com.vikingbrain.nmt.util.exceptions.TheDavidBoxClientException;
 
 /**
+ * Factory for DavidBox operations.
  * 
  * @author vikingBrain
  */

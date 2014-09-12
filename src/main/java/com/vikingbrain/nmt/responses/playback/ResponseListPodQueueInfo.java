@@ -15,7 +15,7 @@ import com.vikingbrain.nmt.responses.ResponseSimple;
  * @author vikingBrain
  */
 @Root(name="response", strict=false)
-public class ResponseListAodQueueInfo extends ResponseSimple {
+public class ResponseListPodQueueInfo extends ResponseSimple {
 
 	@Path("response")
 	@ElementList(inline = true, entry = "queue", required = false)

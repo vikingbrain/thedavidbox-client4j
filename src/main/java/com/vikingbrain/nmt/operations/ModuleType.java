@@ -44,11 +44,11 @@ public interface ModuleType {
 		// Operations in this module
 		list_user_storage_file, search_user_storage_file, create_user_storage_file, write_user_storage_file,
 		read_user_storage_file, get_user_storage_file_info, copy_user_storage_file, move_user_storage_file,
-		delete_user_storage_file, create_user_storage_directory, rename_user_storage_file, select_user_storage_file_to_list,
-		delete_user_storage_file_from_list, copy_user_storage_file_from_list, move_user_storage_file_from_list,
-		create_app_storage, change_app_storage_password, create_app_storage_file, write_app_storage_file, 
-		read_app_storage_file, get_app_storage_file_info, copy_app_storage_file, delete_app_storage, 
-		delete_app_storage_file, ripping;
+		delete_user_storage_file, create_user_storage_directory, rename_user_storage_file, 
+		select_user_storage_file_to_list, delete_user_storage_file_from_list, copy_user_storage_file_from_list, 
+		move_user_storage_file_from_list, create_app_storage, change_app_storage_password, 
+		create_app_storage_file, write_app_storage_file, read_app_storage_file, get_app_storage_file_info, 
+		copy_app_storage_file, delete_app_storage, delete_app_storage_file, ripping;
 
 		public String getModuleName() {
 			return "file_operation";
@@ -117,7 +117,7 @@ public interface ModuleType {
 	
 	public enum PLAYBACK implements OperationType {
 		// Operations in this module
-		list_vod_supported_format, next_dvd, previous_dvd, menu_dvd, title_dvd, 				
+		list_vod_supported_format,				
 		start_vod, get_current_vod_info, list_playback_speed_vod, get_playback_speed_vod,
 		set_playback_speed_vod, step_vod, repeat_vod, list_subtitle_vod, set_subtitle_vod,
 		list_audio_vod, set_audio_vod, set_time_seek_vod, set_zoom_vod,pause_vod, resume_vod, 
@@ -126,9 +126,9 @@ public interface ModuleType {
 		repeat_aod, stop_aod, insert_aod_queue, next_aod_in_queue, delete_aod_entry_queue, 
 		list_aod_queue_info, list_pod_supported_format, marquee_aod, start_pod, get_current_pod_info,
 		pause_pod, resume_pod, set_zoom_pod, stop_pod, insert_pod_queue, next_pod_in_queue,
-		delete_pod_entry_queue, list_pod_queue_info, prev_playlist_aod_in_queue, next_playlist_aod_in_queue,
-		start_database_aod, insert_database_aod_queue, delete_playlist_aod_queue, list_playlist_aod_queue_info,
-		get_playlist_current_aod_info, prev_aod_in_queue, start_database_vod, next_database_vod_in_queue, 
+		delete_pod_entry_queue, list_pod_queue_info, start_database_aod, insert_database_aod_queue, 
+		delete_playlist_aod_queue, list_playlist_aod_queue_info, get_playlist_current_aod_info, 
+		prev_aod_in_queue, start_database_vod, next_database_vod_in_queue, 
 		prev_database_vod_in_queue, stop_database_vod, start_database_pod;
 
 		public String getModuleName() {
@@ -149,9 +149,8 @@ public interface ModuleType {
 		get_setup_page_lock, list_video_output, set_video_output, get_video_output, list_framerate_sync,
 		set_framerate_sync, get_framerate_sync, list_video_zoom, set_video_zoom, get_video_zoom,
 		list_tv_type, set_tv_type, get_tv_type, list_color_space, set_color_space, get_color_space,
-		set_hdmi_audio, get_hdmi_audio, list_surround_mode, set_surround_mode, get_surround_mode,
-		list_dts_audio_mode, set_dts_audio_mode, get_dts_audio_mode, list_ac3_audio_mode, 
-		set_ac3_audio_mode, get_ac3_audio_mode, list_aac_audio_mode, set_aac_audio_mode, 
+		set_hdmi_audio, get_hdmi_audio, list_dts_audio_mode, set_dts_audio_mode, get_dts_audio_mode, 
+		list_ac3_audio_mode, set_ac3_audio_mode, get_ac3_audio_mode, list_aac_audio_mode, set_aac_audio_mode, 
 		get_aac_audio_mode, list_wma_pro_audio_mode, set_wma_pro_audio_mode, get_wma_pro_audio_mode,
 		list_pcm_audio_mode, set_pcm_audio_mode, get_pcm_audio_mode, list_network_mode, 
 		set_network_mode, get_network_mode, list_time_zone, set_time_zone, get_time_zone,

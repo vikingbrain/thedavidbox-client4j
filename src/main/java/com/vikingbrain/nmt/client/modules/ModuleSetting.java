@@ -1,15 +1,23 @@
 package com.vikingbrain.nmt.client.modules;
 
 import com.vikingbrain.nmt.operations.setting.GetLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.GetPhotoIntervalOperation;
 import com.vikingbrain.nmt.operations.setting.GetRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.GetScreenSaverTimeOperation;
+import com.vikingbrain.nmt.operations.setting.GetSlideShowEffectOperation;
 import com.vikingbrain.nmt.operations.setting.GetSubtitleLanguageOperation;
 import com.vikingbrain.nmt.operations.setting.ListLanguageOperation;
 import com.vikingbrain.nmt.operations.setting.ListNetworkSharedFolderOperation;
+import com.vikingbrain.nmt.operations.setting.ListPhotoIntervalOperation;
 import com.vikingbrain.nmt.operations.setting.ListRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.ListScreenSaverTimeOperation;
 import com.vikingbrain.nmt.operations.setting.ListSlideShowEffectOperation;
 import com.vikingbrain.nmt.operations.setting.ListSubtitleLanguageOperation;
 import com.vikingbrain.nmt.operations.setting.SetLanguageOperation;
+import com.vikingbrain.nmt.operations.setting.SetPhotoIntervalOperation;
 import com.vikingbrain.nmt.operations.setting.SetRepeatModeOperation;
+import com.vikingbrain.nmt.operations.setting.SetScreenSaverTimeOperation;
+import com.vikingbrain.nmt.operations.setting.SetSlideShowEffectOperation;
 import com.vikingbrain.nmt.operations.setting.SetSubtitleLanguageOperation;
 
 /**
@@ -68,6 +76,57 @@ public interface ModuleSetting extends BaseModule {
 	 * @return the operation created
 	 */			
 	ListSlideShowEffectOperation buildListSlideShowEffectOperation();
+	
+	/**
+	 * It creates a enable/disable or set current slide show transition effect.
+	 * @param slideShowEffect Any options returns from ListSlideShowEffect operation
+	 * @return the operation created
+	 */
+	SetSlideShowEffectOperation buildSetSlideShowEffectOperation(String slideShowEffect);
+	
+	/**
+	 * It creates a Operation that retrieves current slide show effect.
+	 * @return the operation created
+	 */
+	GetSlideShowEffectOperation buildGetSlideShowEffectOperation();
+	
+	/**
+	 * It creates a Operation that lists all the supported photo interval time in second(s).
+	 * @return the operation created
+	 */
+	ListPhotoIntervalOperation buildListPhotoIntervalOperation();
+	
+	/**
+	 * It creates a Operation that sets current photo interval time.
+	 * @param time Any options returns from ListPhotoInterval operation
+	 * @return the operation created
+	 */
+	SetPhotoIntervalOperation buildSetPhotoIntervalOperation(String time);
+		
+	/**
+	 * It creates a Operation that retrieves current photo interval time in second(s).
+	 * @return the operation created
+	 */
+	GetPhotoIntervalOperation buildGetPhotoIntervalOperation();			
+	
+	/**
+	 * It creates a Operation that lists all the supported screen saver time in second(s).
+	 * @return the operation created
+	 */
+	ListScreenSaverTimeOperation buildListScreenSaverTimeOperation();
+	
+	/**
+	 * It creates a Operation that sets current screen saver time in second(s).
+	 * @param time Any options returns from ListPhotoInterval operation
+	 * @return the operation created
+	 */
+	SetScreenSaverTimeOperation buildSetScreenSaverTimeOperation(String time);
+		
+	/**
+	 * It creates a Operation that retrieves current screen saver time in second(s).
+	 * @return the operation created
+	 */
+	GetScreenSaverTimeOperation buildGetScreenSaverTimeOperation();			
 	
 	/**
 	 * It creates an operation that sets current repeat mode.

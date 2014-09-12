@@ -1,6 +1,8 @@
 package com.vikingbrain.nmt.client.modules;
 
 import com.vikingbrain.nmt.operations.playback.DeleteAodEntryQueueOperation;
+import com.vikingbrain.nmt.operations.playback.DeletePodEntryQueueOperation;
+import com.vikingbrain.nmt.operations.playback.DeleteVodEntryQueueOperation;
 import com.vikingbrain.nmt.operations.playback.GetCurrentAodInfoOperation;
 import com.vikingbrain.nmt.operations.playback.GetCurrentPodInfoOperation;
 import com.vikingbrain.nmt.operations.playback.GetCurrentVodInfoOperation;
@@ -12,11 +14,17 @@ import com.vikingbrain.nmt.operations.playback.ListAodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListAodSupportedFormatOperation;
 import com.vikingbrain.nmt.operations.playback.ListAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.ListPlaybackSpeedVodOperation;
+import com.vikingbrain.nmt.operations.playback.ListPodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListPodSupportedFormatOperation;
 import com.vikingbrain.nmt.operations.playback.ListSubtitleVodOperation;
+import com.vikingbrain.nmt.operations.playback.ListVodQueueInfoOperation;
 import com.vikingbrain.nmt.operations.playback.ListVodSupportedFormatOperation;
+import com.vikingbrain.nmt.operations.playback.PauseAodOperation;
+import com.vikingbrain.nmt.operations.playback.PausePodOperation;
 import com.vikingbrain.nmt.operations.playback.PauseVodOperation;
 import com.vikingbrain.nmt.operations.playback.RepeatVodOperation;
+import com.vikingbrain.nmt.operations.playback.ResumeAodOperation;
+import com.vikingbrain.nmt.operations.playback.ResumePodOperation;
 import com.vikingbrain.nmt.operations.playback.ResumeVodOperation;
 import com.vikingbrain.nmt.operations.playback.SetAudioVodOperation;
 import com.vikingbrain.nmt.operations.playback.SetPlaybackSpeedVodOperation;
@@ -169,6 +177,19 @@ public interface ModulePlayback extends BaseModule {
 	InsertVodQueueOperation buildInsertVodQueueOperation(String filePath);
 
 	/**
+	 * It creates a delete video entry queue operation.
+	 * @param index Any index returned from the ListVodQueueInfo operation
+	 * @return the operation created
+	 */
+	DeleteVodEntryQueueOperation buildDeleteVodEntryQueueOperation(String index);
+	
+	/**
+	 * It creates a list video queue info operation.
+	 * @return the operation created
+	 */
+	ListVodQueueInfoOperation buildListVodQueueInfoOperation();
+	
+	/**
 	 * It creates a list all the supported AOD format operation.
 	 * @return the operation created
 	 */
@@ -186,6 +207,18 @@ public interface ModulePlayback extends BaseModule {
 	 * @return the operation created
 	 */
 	GetCurrentAodInfoOperation buildGetCurrentAodInfoOperation();
+
+	/**
+	 * It creates a pause AOD operation.
+	 * @return the operation created
+	 */
+	PauseAodOperation buildPauseAodOperation();		
+
+	/**
+	 * It creates a resume AOD operation.
+	 * @return the operation created
+	 */
+	ResumeAodOperation buildResumeAodOperation();
 
 	/**
 	 * It creates a stop AOD operation.
@@ -208,7 +241,7 @@ public interface ModulePlayback extends BaseModule {
 	DeleteAodEntryQueueOperation buildDeleteAodEntryQueueOperation(String index);
 
 	/**
-	 * It creates a list audio queue infor operration.
+	 * It creates a list audio queue info operation.
 	 * @return the operation created
 	 */
 	ListAodQueueInfoOperation buildListAodQueueInfoOperation();
@@ -233,6 +266,18 @@ public interface ModulePlayback extends BaseModule {
 	GetCurrentPodInfoOperation buildGetCurrentPodInfoOperation();
 	
 	/**
+	 * It creates a pause POD operation.
+	 * @return the operation created
+	 */
+	PausePodOperation buildPausePodOperation();
+	
+	/**
+	 * It creates a resume POD operation.
+	 * @return the operation created
+	 */
+	ResumePodOperation buildResumePodOperation();
+	
+	/**
 	 * It creates a stop POD operation.
 	 * @return the operation created
 	 */
@@ -244,5 +289,18 @@ public interface ModulePlayback extends BaseModule {
 	 * @return the operation created
 	 */
 	InsertPodQueueOperation buildInsertPodQueueOperation(String filePath);	
+
+	/**
+	 * It creates a delete photo entry queue operation.
+	 * @param index Any index returned from the ListPodQueueInfo operation
+	 * @return the operation created
+	 */
+	DeletePodEntryQueueOperation buildDeletePodEntryQueueOperation(String index);
+	
+	/**
+	 * It creates a list photo queue info operation.
+	 * @return the operation created
+	 */
+	ListPodQueueInfoOperation buildListPodQueueInfoOperation();
 
 }
