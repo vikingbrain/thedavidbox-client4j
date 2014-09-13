@@ -19,7 +19,40 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
     <dependency>
       <groupId>com.vikingbrain</groupId>
       <artifactId>thedavidbox-client4j</artifactId>
-      <version>1.1.0</version> <!-- or whatever the latest version is -->
+      <version>1.2.0</version> <!-- or whatever the latest version is -->
+    </dependency>
+  </dependencies>
+```
+
+```xml
+  <!-- Maven dependency for an Android application project -->
+  <dependencies>
+    <dependency>
+      <groupId>com.vikingbrain</groupId>
+      <artifactId>thedavidbox-client4j</artifactId>
+      <version>1.2.0</version> <!-- or whatever the latest version is -->
+      <exclusions>
+		<exclusion>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</exclusion>
+		<exclusion>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</exclusion>
+		<exclusion>
+			<groupId>stax</groupId>
+			<artifactId>stax</artifactId>
+		</exclusion>
+		<exclusion>
+			<groupId>stax</groupId>
+			<artifactId>stax-api</artifactId>
+		</exclusion>
+		<exclusion>
+			<groupId>xpp3</groupId>
+			<artifactId>xpp3</artifactId>
+		</exclusion>
+	  </exclusions>
     </dependency>
   </dependencies>
 ```
@@ -27,10 +60,10 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
 If you are not a maven fan:
 
 	Search on maven central for the library version with all dependencies attached:
-	thedavidbox-client4j-1.1.0-jar-with-dependencies.jar 	<!-- or whatever the latest version is -->
+	thedavidbox-client4j-1.2.0-jar-with-dependencies.jar 	<!-- or whatever the latest version is -->
 
 	If you want to use it on an Android app, search on maven central for the libray version with the android classifier:
-	thedavidbox-client4j-1.1.0-android.jar	 <!-- or whatever the latest version is -->
+	thedavidbox-client4j-1.2.0-android.jar	 <!-- or whatever the latest version is -->
 
 ### Quickstart
 
