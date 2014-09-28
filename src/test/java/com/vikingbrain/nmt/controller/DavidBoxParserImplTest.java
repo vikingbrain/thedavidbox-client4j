@@ -1,3 +1,18 @@
+/*
+ * Copyright 2011-2014 Rafael Iñigo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * 		http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.vikingbrain.nmt.controller;
 
 import java.io.IOException;
@@ -5,10 +20,9 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.vikingbrain.nmt.controller.DavidBoxParser;
 import com.vikingbrain.nmt.controller.impl.DavidBoxParserImpl;
 import com.vikingbrain.nmt.responses.ResponseSimple;
-import com.vikingbrain.nmt.responses.playback.ResponseListAodQueueInfo;
+import com.vikingbrain.nmt.responses.playback.ResponseGetCurrentAodInfo;
 import com.vikingbrain.nmt.responses.system.ResponseCheckNmtExist;
 import com.vikingbrain.nmt.test.util.MockUtils;
 import com.vikingbrain.nmt.test.util.XmlTestFiles;
@@ -77,7 +91,8 @@ public class DavidBoxParserImplTest {
 	}
 
 	/**
-	 * Parse a checkNmtExist xml response in other response object will throw a DavidBoxClientException.
+	 * Parse a checkNmtExist xml response in other response object with other attributes
+	 * expected will throw a DavidBoxClientException.
 	 * @throws TheDavidBoxClientException exception in the client
 	 * @throws IOException exception reading the xml response test file
 	 */
@@ -89,7 +104,7 @@ public class DavidBoxParserImplTest {
 		
 		String xmlTestResponse = MockUtils.getContentFromResponseTestFile(xmlResponseFileName);
 
-		//Parse it into a ResponseListAodQueueInfo object 
-		davidBoxParser.parse(ResponseListAodQueueInfo.class, xmlTestResponse);
+		//Parse it into a ResponseGetCurrentAodInfo object 
+		davidBoxParser.parse(ResponseGetCurrentAodInfo.class, xmlTestResponse);
 	}
 }

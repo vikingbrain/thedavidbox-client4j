@@ -1,3 +1,18 @@
+/*
+ * Copyright 2011-2014 Rafael Iñigo
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * 		http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.vikingbrain.nmt.test.util;
 
 /**
@@ -74,6 +89,14 @@ public class XmlTestFiles {
 	public static final String DELETE_AOD_ENTRY_QUEUE_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "DeleteAodEntryQueue_documentation_example.xml";				
 	public static final String DELETE_AOD_ENTRY_QUEUE_A200 = FOLDER_PLAYBACK + "DeleteAodEntryQueue_a200.xml";
 
+	/** Delete video entry queue response files. */
+	public static final String DELETE_VOD_ENTRY_QUEUE_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "DeleteVodEntryQueue_documentation_example.xml";				
+	public static final String DELETE_VOD_ENTRY_QUEUE_A200 = FOLDER_PLAYBACK + "DeleteVodEntryQueue_a200.xml";
+
+	/** Delete photo entry queue response files. */
+	public static final String DELETE_POD_ENTRY_QUEUE_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "DeletePodEntryQueue_documentation_example.xml";				
+	public static final String DELETE_POD_ENTRY_QUEUE_A200 = FOLDER_PLAYBACK + "DeletePodEntryQueue_a200.xml";
+	
 	/** Get current aod info response files. */
 	public static final String GET_CURRENT_AOD_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "GetCurrentAodInfo_documentation_example.xml";				
 	public static final String GET_CURRENT_AOD_INFO_A200 = FOLDER_PLAYBACK + "GetCurrentAodInfo_a200.xml";
@@ -114,7 +137,18 @@ public class XmlTestFiles {
 
 	/** List audio queue info response files. */
 	public static final String LIST_AOD_QUEUE_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListAodQueueInfo_documentation_example.xml";
-	public static final String LIST_AOD_QUEUE_INFO_A200 = FOLDER_PLAYBACK + "ListAodQueueInfo_a200.xml";	
+	public static final String LIST_AOD_QUEUE_INFO_A200 = FOLDER_PLAYBACK + "ListAodQueueInfo_a200.xml";
+	public static final String LIST_AOD_QUEUE_INFO_A200_TEST2 = FOLDER_PLAYBACK + "ListAodQueueInfo_a200_test2.xml";
+
+	/** List video queue info response files. */
+	public static final String LIST_VOD_QUEUE_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListVodQueueInfo_documentation_example.xml";
+	public static final String LIST_VOD_QUEUE_INFO_A200 = FOLDER_PLAYBACK + "ListVodQueueInfo_a200.xml";
+	public static final String LIST_VOD_QUEUE_INFO_A200_TEST2 = FOLDER_PLAYBACK + "ListVodQueueInfo_a200_test2.xml";
+
+	/** List photo queue info response files. */
+	public static final String LIST_POD_QUEUE_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListPodQueueInfo_documentation_example.xml";
+	public static final String LIST_POD_QUEUE_INFO_A200 = FOLDER_PLAYBACK + "ListPodQueueInfo_a200.xml";
+	public static final String LIST_POD_QUEUE_INFO_A200_TEST2 = FOLDER_PLAYBACK + "ListPodQueueInfo_a200_test2.xml";
 
 	/** Start audio response files. */
 	public static final String START_AOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "StartAod_documentation_example.xml";
@@ -178,11 +212,27 @@ public class XmlTestFiles {
 	public static final String PAUSE_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "PauseVod_documentation_example.xml";
 	public static final String PAUSE_VOD_A200 = FOLDER_PLAYBACK + "PauseVod_a200.xml";
 
+	/** Pause aod response files. */
+	public static final String PAUSE_AOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "PauseAod_documentation_example.xml";
+	public static final String PAUSE_AOD_A200 = FOLDER_PLAYBACK + "PauseAod_a200.xml";
+
+	/** Pause pod response files. */
+	public static final String PAUSE_POD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "PausePod_documentation_example.xml";
+	public static final String PAUSE_POD_A200 = FOLDER_PLAYBACK + "PausePod_a200.xml";
+
 	/** Resume vod response files. */
 	public static final String RESUME_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ResumeVod_documentation_example.xml";
 	public static final String RESUME_VOD_A200 = FOLDER_PLAYBACK + "ResumeVod_a200.xml";
 
-		
+	/** Resume aod response files. */
+	public static final String RESUME_AOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ResumeAod_documentation_example.xml";
+	public static final String RESUME_AOD_A200 = FOLDER_PLAYBACK + "ResumeAod_a200.xml";
+
+	/** Resume pod response files. */
+	public static final String RESUME_POD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ResumePod_documentation_example.xml";
+	public static final String RESUME_POD_A200 = FOLDER_PLAYBACK + "ResumePod_a200.xml";
+
+	
 	/** SETTING. */
 	public static final String FOLDER_SETTING = "setting/";
 
@@ -231,7 +281,41 @@ public class XmlTestFiles {
 	/** List slide show effect response files. */
 	public static final String LIST_SLIDE_SHOW_EFFECT_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "ListSlideShowEffect_documentation_example.xml";				
 	public static final String LIST_SLIDE_SHOW_EFFECT_A200 = FOLDER_SETTING + "ListSlideShowEffect_a200.xml";
+
+	/** Set slide show effect response files. */
+	public static final String SET_SLIDE_SHOW_EFFECT_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "SetSlideShowEffect_documentation_example.xml";				
+	public static final String SET_SLIDE_SHOW_EFFECT_A200 = FOLDER_SETTING + "SetSlideShowEffect_a200.xml";
+
+	/** Get slide show effect response files. */
+	public static final String GET_SLIDE_SHOW_EFFECT_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "GetSlideShowEffect_documentation_example.xml";				
+	public static final String GET_SLIDE_SHOW_EFFECT_A200 = FOLDER_SETTING + "GetSlideShowEffect_a200.xml";
+
+	/** List photo interval response files. */
+	public static final String LIST_PHOTO_INTERVAL_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "ListPhotoInterval_documentation_example.xml";				
+	public static final String LIST_PHOTO_INTERVAL_A200 = FOLDER_SETTING + "ListPhotoInterval_a200.xml";
+
+	/** Set photo interval response files. */
+	public static final String SET_PHOTO_INTERVAL_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "SetPhotoInterval_documentation_example.xml";				
+	public static final String SET_PHOTO_INTERVAL_A200 = FOLDER_SETTING + "SetPhotoInterval_a200.xml";
+
+	/** Get photo interval response files. */
+	public static final String GET_PHOTO_INTERVAL_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "GetPhotoInterval_documentation_example.xml";				
+	public static final String GET_PHOTO_INTERVAL_A200 = FOLDER_SETTING + "GetPhotoInterval_a200.xml";
 	
+
+	
+	/** List screen saver time response files. */
+	public static final String LIST_SCREEN_SAVER_TIME_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "ListScreenSaverTime_documentation_example.xml";				
+	public static final String LIST_SCREEN_SAVER_TIME_A200 = FOLDER_SETTING + "ListScreenSaverTime_a200.xml";
+
+	/** Set screen saver time response files. */
+	public static final String SET_SCREEN_SAVER_TIME_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "SetScreenSaverTime_documentation_example.xml";				
+	public static final String SET_SCREEN_SAVER_TIME_A200 = FOLDER_SETTING + "SetScreenSaverTime_a200.xml";
+
+	/** Get screen saver time response files. */
+	public static final String GET_SCREEN_SAVER_TIME_DOCUMENTATION_EXAMPLE = FOLDER_SETTING + "GetScreenSaverTime_documentation_example.xml";				
+	public static final String GET_SCREEN_SAVER_TIME_A200 = FOLDER_SETTING + "GetScreenSaverTime_a200.xml";
+
 	
 	/** SYSTEM. */
 	public static final String FOLDER_SYSTEM = "system/";

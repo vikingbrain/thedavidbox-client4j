@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>get_photo_interval</arg0>
+		<module>setting</module>
+	</request>
+	<response>
+		<time>1</time>
+	</response>
+	<returnValue>0</returnValue>
+</theDavidBox>
