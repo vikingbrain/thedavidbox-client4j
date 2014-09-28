@@ -57,13 +57,12 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
   </dependencies>
 ```
 
-If you are not a maven fan:
-
-	Search on maven central for the library version with all dependencies attached:
-	thedavidbox-client4j-1.2.0-jar-with-dependencies.jar 	<!-- or whatever the latest version is -->
-
-	If you want to use it on an Android app, search on maven central for the libray version with the android classifier:
-	thedavidbox-client4j-1.2.0-android.jar	 <!-- or whatever the latest version is -->
+##Downloads:
+* **[thedavidbox-client4j-1.2.0-jar-with-dependencies.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-jar-with-dependencies.jar)** (All required dependencies attached)
+* **[thedavidbox-client4j-1.2.0-android.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-android.jar)** (Ready to use on your Android app)
+* **[thedavidbox-client4j-1.2.0-sources.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-sources.jar)**
+* **[thedavidbox-client4j-1.2.0-javadoc.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-javadoc.jar)**
+* **[thedavidbox-client4j-1.2.0.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0.jar)** (Wihout dependencies)
 
 ### Quickstart
 
