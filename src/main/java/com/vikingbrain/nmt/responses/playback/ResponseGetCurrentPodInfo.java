@@ -34,7 +34,7 @@ public class ResponseGetCurrentPodInfo extends ResponseSimple {
 //	private String fullPath;
 
 	@Path("response")
-	@Element(name="title")	
+	@Element(name="title", required=false)	
 	private String title;
 
 //

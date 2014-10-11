@@ -48,7 +48,8 @@ public class GetCurrentAodInfoOperationTest extends AbstractClientMock {
 	public static Collection<Object[]> data() {		
 		Object[][] data = new Object[][] { 
 				{ XmlTestFiles.GET_CURRENT_AOD_INFO_DOCUMENTATION_EXAMPLE },				
-				{ XmlTestFiles. GET_CURRENT_AOD_INFO_A200 }
+				{ XmlTestFiles.GET_CURRENT_AOD_INFO_A200 },
+				{ XmlTestFiles.GET_CURRENT_AOD_INFO_A200_RETURN_VALUE_1 }
 				};
 	    return Arrays.asList(data);
 	}
@@ -72,7 +73,6 @@ public class GetCurrentAodInfoOperationTest extends AbstractClientMock {
 		ResponseGetCurrentAodInfo response =  operation.execute();
         
         Assert.assertNotNull(response);
-        Assert.assertTrue(response.isValid());
 
         Assert.assertFalse("".equals(response.getFullPath()));
         Assert.assertFalse("".equals(response.getCurrentTime()));

@@ -34,15 +34,15 @@ public class ResponseGetCurrentVodInfo extends ResponseSimple {
 //	private String title; //Not used because is empty for video, using fullPath instead
 
 	@Path("response")
-	@Element(name="fullPath")
+	@Element(name="fullPath", required=false)
 	private String fullPath;
 	
 	@Path("response")
-	@Element(name="currentTime")
+	@Element(name="currentTime", required=false)
 	private String currentTime;
 
 	@Path("response")
-	@Element(name="totalTime")
+	@Element(name="totalTime", required=false)
 	private String totalTime;
 		
 	public String getFullPath() {

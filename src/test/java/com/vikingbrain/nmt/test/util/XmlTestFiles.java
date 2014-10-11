@@ -100,15 +100,18 @@ public class XmlTestFiles {
 	/** Get current aod info response files. */
 	public static final String GET_CURRENT_AOD_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "GetCurrentAodInfo_documentation_example.xml";				
 	public static final String GET_CURRENT_AOD_INFO_A200 = FOLDER_PLAYBACK + "GetCurrentAodInfo_a200.xml";
+	public static final String GET_CURRENT_AOD_INFO_A200_RETURN_VALUE_1 = FOLDER_PLAYBACK + "GetCurrentAodInfo_a200_returnvalue_1.xml";
 
 	/** Get current vod info response files. */
 	public static final String GET_CURRENT_VOD_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "GetCurrentVodInfo_documentation_example.xml";	
 	public static final String GET_CURRENT_VOD_INFO_A200_TEST1 = FOLDER_PLAYBACK + "GetCurrentVodInfo_a200_test1.xml";	
 	public static final String GET_CURRENT_VOD_INFO_A200_TEST2 = FOLDER_PLAYBACK + "GetCurrentVodInfo_a200_test2.xml";
+	public static final String GET_CURRENT_VOD_INFO_A200_RETURN_VALUE_1 = FOLDER_PLAYBACK + "GetCurrentVodInfo_a200_returnvalue_1.xml";
 	
 	/** Get current pod info response files. */
 	public static final String GET_CURRENT_POD_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "GetCurrentPodInfo_documentation_example.xml";	
 	public static final String GET_CURRENT_POD_INFO_A200 = FOLDER_PLAYBACK + "GetCurrentPodInfo_a200.xml";	
+	public static final String GET_CURRENT_POD_INFO_A200_RETURN_VALUE_1 = FOLDER_PLAYBACK + "GetCurrentPodInfo_a200_returnvalue_1.xml";	
 
 	/** List playback speed vod response files. */
 	public static final String LIST_PLAYBACK_SPEED_VOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListPlaybackSpeedVod_documentation_example.xml";	
@@ -139,16 +142,17 @@ public class XmlTestFiles {
 	public static final String LIST_AOD_QUEUE_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListAodQueueInfo_documentation_example.xml";
 	public static final String LIST_AOD_QUEUE_INFO_A200 = FOLDER_PLAYBACK + "ListAodQueueInfo_a200.xml";
 	public static final String LIST_AOD_QUEUE_INFO_A200_TEST2 = FOLDER_PLAYBACK + "ListAodQueueInfo_a200_test2.xml";
+	public static final String LIST_AOD_QUEUE_INFO_A200_RETURN_VALUE_1 = FOLDER_PLAYBACK + "ListAodQueueInfo_a200_returnvalue_1.xml";
 
 	/** List video queue info response files. */
 	public static final String LIST_VOD_QUEUE_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListVodQueueInfo_documentation_example.xml";
 	public static final String LIST_VOD_QUEUE_INFO_A200 = FOLDER_PLAYBACK + "ListVodQueueInfo_a200.xml";
-	public static final String LIST_VOD_QUEUE_INFO_A200_TEST2 = FOLDER_PLAYBACK + "ListVodQueueInfo_a200_test2.xml";
+	public static final String LIST_VOD_QUEUE_INFO_A200_RETURN_VALUE_1 = FOLDER_PLAYBACK + "ListVodQueueInfo_a200_returnvalue_1.xml";
 
 	/** List photo queue info response files. */
 	public static final String LIST_POD_QUEUE_INFO_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "ListPodQueueInfo_documentation_example.xml";
 	public static final String LIST_POD_QUEUE_INFO_A200 = FOLDER_PLAYBACK + "ListPodQueueInfo_a200.xml";
-	public static final String LIST_POD_QUEUE_INFO_A200_TEST2 = FOLDER_PLAYBACK + "ListPodQueueInfo_a200_test2.xml";
+	public static final String LIST_POD_QUEUE_INFO_A200_RETURN_VALUE_1 = FOLDER_PLAYBACK + "ListPodQueueInfo_a200_returnvalue_1.xml";
 
 	/** Start audio response files. */
 	public static final String START_AOD_DOCUMENTATION_EXAMPLE = FOLDER_PLAYBACK + "StartAod_documentation_example.xml";

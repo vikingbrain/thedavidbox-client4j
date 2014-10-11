@@ -22,8 +22,8 @@ import org.junit.Test;
 
 import com.vikingbrain.nmt.controller.impl.DavidBoxParserImpl;
 import com.vikingbrain.nmt.responses.ResponseSimple;
-import com.vikingbrain.nmt.responses.playback.ResponseGetCurrentAodInfo;
 import com.vikingbrain.nmt.responses.system.ResponseCheckNmtExist;
+import com.vikingbrain.nmt.responses.system.ResponseGetDeviceInfo;
 import com.vikingbrain.nmt.test.util.MockUtils;
 import com.vikingbrain.nmt.test.util.XmlTestFiles;
 import com.vikingbrain.nmt.util.exceptions.TheDavidBoxClientException;
@@ -105,6 +105,6 @@ public class DavidBoxParserImplTest {
 		String xmlTestResponse = MockUtils.getContentFromResponseTestFile(xmlResponseFileName);
 
 		//Parse it into a ResponseGetCurrentAodInfo object 
-		davidBoxParser.parse(ResponseGetCurrentAodInfo.class, xmlTestResponse);
+		davidBoxParser.parse(ResponseGetDeviceInfo.class, xmlTestResponse);
 	}
 }

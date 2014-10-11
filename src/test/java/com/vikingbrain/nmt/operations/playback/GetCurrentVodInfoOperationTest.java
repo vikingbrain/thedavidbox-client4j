@@ -48,8 +48,9 @@ public class GetCurrentVodInfoOperationTest extends AbstractClientMock {
 	public static Collection<Object[]> data() {		
 		Object[][] data = new Object[][] { 
 				{ XmlTestFiles.GET_CURRENT_VOD_INFO_DOCUMENTATION_EXAMPLE },				
-				{ XmlTestFiles. GET_CURRENT_VOD_INFO_A200_TEST1 },
-				{ XmlTestFiles. GET_CURRENT_VOD_INFO_A200_TEST2 }
+				{ XmlTestFiles.GET_CURRENT_VOD_INFO_A200_TEST1 },
+				{ XmlTestFiles.GET_CURRENT_VOD_INFO_A200_TEST2 },
+				{ XmlTestFiles.GET_CURRENT_VOD_INFO_A200_RETURN_VALUE_1 }				
 				};
 	    return Arrays.asList(data);
 	}
@@ -73,7 +74,6 @@ public class GetCurrentVodInfoOperationTest extends AbstractClientMock {
 		ResponseGetCurrentVodInfo response =  operation.execute();
 		
         Assert.assertNotNull(response);
-        Assert.assertTrue(response.isValid());
 
         Assert.assertFalse("".equals(response.getFullPath()));
         Assert.assertFalse("".equals(response.getCurrentTime()));
