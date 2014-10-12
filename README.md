@@ -1,6 +1,6 @@
 # TheDavidBox client for Java (thedavidbox-client4j)
-[![Build Status](http://travis-ci.org/vikingbrain/thedavidbox-client4j.svg?branch=develop)](http://travis-ci.org/vikingbrain/thedavidbox-client4j "Check this project's build status on TravisCI")
-[![Coverage Status](https://coveralls.io/repos/vikingbrain/thedavidbox-client4j/badge.png?branch=develop)](https://coveralls.io/r/vikingbrain/thedavidbox-client4j?branch=develop)
+[![Build Status](http://travis-ci.org/vikingbrain/thedavidbox-client4j.svg?branch=master)](http://travis-ci.org/vikingbrain/thedavidbox-client4j "Check this project's build status on TravisCI")
+[![Coverage Status](https://coveralls.io/repos/vikingbrain/thedavidbox-client4j/badge.png?branch=master)](https://coveralls.io/r/vikingbrain/thedavidbox-client4j?branch=master)
 [![Flattr donate button](http://img.shields.io/flattr/donate.png?color=blue)](https://flattr.com/profile/vikingbrain "Donate monthly to this project using Flattr")
 [![PayPal donate button](http://img.shields.io/paypal/donate.png?color=blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9UAHFFF7B2BLG "Donate once-off to this project using Paypal")
 
@@ -19,7 +19,7 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
     <dependency>
       <groupId>com.vikingbrain</groupId>
       <artifactId>thedavidbox-client4j</artifactId>
-      <version>1.2.0</version> <!-- or whatever the latest version is -->
+      <version>1.2.1</version> <!-- or whatever the latest version is -->
     </dependency>
   </dependencies>
 ```
@@ -30,7 +30,7 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
     <dependency>
       <groupId>com.vikingbrain</groupId>
       <artifactId>thedavidbox-client4j</artifactId>
-      <version>1.2.0</version> <!-- or whatever the latest version is -->
+      <version>1.2.1</version> <!-- or whatever the latest version is -->
       <exclusions>
 		<exclusion>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -58,11 +58,11 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
 ```
 
 ##Downloads:
-* **[thedavidbox-client4j-1.2.0-jar-with-dependencies.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-jar-with-dependencies.jar)** (All required dependencies attached)
-* **[thedavidbox-client4j-1.2.0-android.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-android.jar)** (Ready to use on your Android app)
-* **[thedavidbox-client4j-1.2.0-sources.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-sources.jar)**
-* **[thedavidbox-client4j-1.2.0-javadoc.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-javadoc.jar)**
-* **[thedavidbox-client4j-1.2.0.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0.jar)** (Wihout dependencies)
+* **[thedavidbox-client4j-1.2.1-jar-with-dependencies.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-jar-with-dependencies.jar)** (All required dependencies attached)
+* **[thedavidbox-client4j-1.2.1-android.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-android.jar)** (Ready to use on your Android app)
+* **[thedavidbox-client4j-1.2.1-sources.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-sources.jar)**
+* **[thedavidbox-client4j-1.2.1-javadoc.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-javadoc.jar)**
+* **[thedavidbox-client4j-1.2.1.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1.jar)** (Wihout dependencies)
 
 ### Quickstart
 
