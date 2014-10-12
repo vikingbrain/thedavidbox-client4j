@@ -19,7 +19,7 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
     <dependency>
       <groupId>com.vikingbrain</groupId>
       <artifactId>thedavidbox-client4j</artifactId>
-      <version>1.2.0</version> <!-- or whatever the latest version is -->
+      <version>1.2.1</version> <!-- or whatever the latest version is -->
     </dependency>
   </dependencies>
 ```
@@ -30,7 +30,7 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
     <dependency>
       <groupId>com.vikingbrain</groupId>
       <artifactId>thedavidbox-client4j</artifactId>
-      <version>1.2.0</version> <!-- or whatever the latest version is -->
+      <version>1.2.1</version> <!-- or whatever the latest version is -->
       <exclusions>
 		<exclusion>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -58,11 +58,11 @@ The latest thedavidbox-client4j artifacts are published to maven central. Bringi
 ```
 
 ##Downloads:
-* **[thedavidbox-client4j-1.2.0-jar-with-dependencies.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-jar-with-dependencies.jar)** (All required dependencies attached)
-* **[thedavidbox-client4j-1.2.0-android.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-android.jar)** (Ready to use on your Android app)
-* **[thedavidbox-client4j-1.2.0-sources.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-sources.jar)**
-* **[thedavidbox-client4j-1.2.0-javadoc.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0-javadoc.jar)**
-* **[thedavidbox-client4j-1.2.0.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.0/thedavidbox-client4j-1.2.0.jar)** (Wihout dependencies)
+* **[thedavidbox-client4j-1.2.1-jar-with-dependencies.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-jar-with-dependencies.jar)** (All required dependencies attached)
+* **[thedavidbox-client4j-1.2.1-android.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-android.jar)** (Ready to use on your Android app)
+* **[thedavidbox-client4j-1.2.1-sources.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-sources.jar)**
+* **[thedavidbox-client4j-1.2.1-javadoc.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1-javadoc.jar)**
+* **[thedavidbox-client4j-1.2.1.jar](https://repo1.maven.org/maven2/com/vikingbrain/thedavidbox-client4j/1.2.1/thedavidbox-client4j-1.2.1.jar)** (Wihout dependencies)
 
 ### Quickstart
 

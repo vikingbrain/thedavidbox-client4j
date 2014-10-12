@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theDavidBox>
+	<request>
+		<arg0>list_vod_queue_info</arg0>
+		<module>playback</module>
+	</request>
+	<response />
+	<returnValue>1</returnValue>
+</theDavidBox>

@@ -28,7 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.vikingbrain.nmt.responses.playback.ObjectQueueElement;
-import com.vikingbrain.nmt.responses.playback.ResponseListAodQueueInfo;
+import com.vikingbrain.nmt.responses.playback.ResponseListVodQueueInfo;
 import com.vikingbrain.nmt.test.util.AbstractClientMock;
 import com.vikingbrain.nmt.test.util.XmlTestFiles;
 
@@ -37,25 +37,24 @@ import com.vikingbrain.nmt.test.util.XmlTestFiles;
  * @author vikingBrain
  */
 @RunWith(value = Parameterized.class)
-public class ListAodQueueInfoOperationTest extends AbstractClientMock {
+public class ListVodQueueInfoOperationTest extends AbstractClientMock {
 
 	/** Logger. */
-	private static Logger logger = LoggerFactory.getLogger(ListAodQueueInfoOperationTest.class);
+	private static Logger logger = LoggerFactory.getLogger(ListVodQueueInfoOperationTest.class);
 	
 	private String xmlFileName;
 	
 	@Parameters(name = "{index}: {0}")
 	public static Collection<Object[]> data() {		
 		Object[][] data = new Object[][] { 
-				{ XmlTestFiles.LIST_AOD_QUEUE_INFO_DOCUMENTATION_EXAMPLE },				
-				{ XmlTestFiles.LIST_AOD_QUEUE_INFO_A200 },
-				{ XmlTestFiles.LIST_AOD_QUEUE_INFO_A200_TEST2 },
-				{ XmlTestFiles.LIST_AOD_QUEUE_INFO_A200_RETURN_VALUE_1 }			
+				{ XmlTestFiles.LIST_VOD_QUEUE_INFO_DOCUMENTATION_EXAMPLE },				
+				{ XmlTestFiles.LIST_VOD_QUEUE_INFO_A200 },
+				{ XmlTestFiles.LIST_VOD_QUEUE_INFO_A200_RETURN_VALUE_1 }			
 				};
 	    return Arrays.asList(data);
 	}
 
-	public ListAodQueueInfoOperationTest(String _xmlFileName) throws FileNotFoundException {
+	public ListVodQueueInfoOperationTest(String _xmlFileName) throws FileNotFoundException {
 		xmlFileName = _xmlFileName;
 	}
 
@@ -65,13 +64,13 @@ public class ListAodQueueInfoOperationTest extends AbstractClientMock {
 		//Put the expected response in the mock of the http client
 		setXmlFileResponseInHttpMockClient(xmlFileName);
 
-		ListAodQueueInfoOperation operation = theDavidBoxClient.getModulePlayback().
-				buildListAodQueueInfoOperation();
+		ListVodQueueInfoOperation operation = theDavidBoxClient.getModulePlayback().
+				buildListVodQueueInfoOperation();
 		
 		//All the info for the operation
 		logger.info(operation.toString());
 				
-		ResponseListAodQueueInfo response = operation.execute();		
+		ResponseListVodQueueInfo response = operation.execute();		
 
         Assert.assertNotNull(response);
 
