@@ -13,7 +13,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.vikingbrain</groupId>
 	<artifactId>thedavidbox-client4j</artifactId>
-	<version>1.2.1-SNAPSHOT</version>
+	<version>1.2.1</version>
 	<packaging>jar</packaging>
 	<name>TheDavidBox client for Java</name>
 	<description>A Java HTTP client for consuming TheDavidBox Service API of Networked Media Tank devices</description>
@@ -54,7 +54,7 @@
 		<connection>scm:git:git@github.com:vikingbrain/thedavidbox-client4j.git</connection>
 		<url>https://www.github.com/vikingbrain/thedavidbox-client4j.git</url>
 		<developerConnection>scm:git:git@github.com:vikingbrain/thedavidbox-client4j.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>thedavidbox-client4j-1.2.1</tag>
 	</scm>
 
 	<licenses>
