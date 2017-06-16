@@ -1,8 +1,9 @@
 # TheDavidBox client for Java (thedavidbox-client4j)
 [![Build Status](http://travis-ci.org/vikingbrain/thedavidbox-client4j.svg?branch=develop)](http://travis-ci.org/vikingbrain/thedavidbox-client4j "Check this project's build status on TravisCI")
 [![Coverage Status](https://coveralls.io/repos/vikingbrain/thedavidbox-client4j/badge.png?branch=develop)](https://coveralls.io/r/vikingbrain/thedavidbox-client4j?branch=develop)
-[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=blue)](https://flattr.com/profile/vikingbrain "Donate monthly to this project using Flattr")
-[![PayPal donate button](http://img.shields.io/paypal/donate.png?color=blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9UAHFFF7B2BLG "Donate once-off to this project using Paypal")
+[![PayPal donate button](http://img.shields.io/paypal/donate.png?color=blue)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9UAHFFF7B2BLG "Donate once-off to this project using Paypal")  
+[![Bitcoin donation](http://static.vikingbrain.com/images/bitcoin-small.png)](https://blockchain.info/address/13t5W36tcrirhwwMG8WkDDc5aa89acmJe5 "Bitcoin donation") BTC: 13t5W36tcrirhwwMG8WkDDc5aa89acmJe5  
+[![Ethereum donation](http://static.vikingbrain.com/images/ethereum-small.png)](https://www.etherchain.org/account/0x7fC401f9ca6c707177Bc082d193A1C7120659C51 "Ethereum donation") ETH: 0x7fC401f9ca6c707177Bc082d193A1C7120659C51
 
 thedavidbox-client4j is a Java HTTP client for consuming [TheDavidBox Service API](https://developer.cloudmedia.com) on Networked Media Tank devices such as Popcorn Hour A200, A210, A300, A400, A410, C200, C300, PopBox 3D, PopBox V8 based in NMT system
 
